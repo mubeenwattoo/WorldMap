@@ -166,57 +166,57 @@
             alt="World Map"
             class="w-full rounded"
           />
-          <div class="dot top-[20%] left-[11%]" style="--delay: 0s">
+          <div class="dot top-[20%] left-[11%]" style="--delay: 0s" onclick="toggleTooltip(this)" role="button" tabindex="0">
             <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Paris</div>
           </div>
-          <div class="dot top-[20%] left-[89%]" style="--delay: 0s">
+          <div class="dot top-[20%] left-[89%]" style="--delay: 0s onclick="toggleTooltip(this)" role="button" tabindex="0"">
             <div class="tooltip -top-6 left-1/2 -translate-x-1/2">
               Rio de Janeiro
             </div>
           </div>
-          <div class="dot top-[62%] left-[55%]" style="--delay: 0.3s">
+          <div class="dot top-[62%] left-[55%]" style="--delay: 0.3s" onclick="toggleTooltip(this)" role="button" tabindex="0">
             <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Dubai</div>
           </div>
-          <div class="dot top-[38%] left-[58%]" style="--delay: 0.6s">
+          <div class="dot top-[38%] left-[58%]" style="--delay: 0.6s" onclick="toggleTooltip(this)" role="button" tabindex="0">
             <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Tel Aviv</div>
           </div>
-          <div class="dot top-[29%] left-[47%]" style="--delay: 0.9s">
+          <div class="dot top-[29%] left-[47%]" style="--delay: 0.9s"  onclick="toggleTooltip(this)" role="button" tabindex="0">
             <div class="tooltip -top-6 left-1/2 -translate-x-1/2">London</div>
           </div>
-          <div class="dot top-[20%] left-[82%]" style="--delay: 0.3s">
+          <div class="dot top-[20%] left-[82%]" style="--delay: 0.3s" onclick="toggleTooltip(this)" role="button" tabindex="0">
             <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Berlin</div>
           </div>
-          <div class="dot top-[12%] left-[35%]" style="--delay: 0.6s">
+          <div class="dot top-[12%] left-[35%]" style="--delay: 0.6s" onclick="toggleTooltip(this)" role="button" tabindex="0">
             <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Miami</div>
           </div>
-          <div class="dot top-[35%] left-[18%]" style="--delay: 0.9s">
+          <div class="dot top-[35%] left-[18%]" style="--delay: 0.9s" onclick="toggleTooltip(this)" role="button" tabindex="0">
             <div class="tooltip -top-6 left-1/2 -translate-x-1/2">
               Bucharest
             </div>
           </div>
-          <div class="dot top-[30%] left-[28%]" style="--delay: 0.9s">
+          <div class="dot top-[30%] left-[28%]" style="--delay: 0.9s" onclick="toggleTooltip(this)" role="button" tabindex="0">
             <div class="tooltip -top-6 left-1/2 -translate-x-1/2">
               Las Vegas
             </div>
           </div>
 
-          <div class="dot top-[75%] left-[30%]" style="--delay: 0.3">
+          <div class="dot top-[75%] left-[30%]" style="--delay: 0.3" onclick="toggleTooltip(this)" role="button" tabindex="0">
             <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Cancun</div>
           </div>
-          <div class="dot top-[60%] left-[75%]" style="--delay: 0.6s">
+          <div class="dot top-[60%] left-[75%]" style="--delay: 0.6s" onclick="toggleTooltip(this)" role="button" tabindex="0">
             <div class="tooltip -top-6 left-1/2 -translate-x-1/2">
               Singapore
             </div>
           </div>
 
-          <div class="dot top-[75%] left-[87%]" style="--delay: 0.6s">
+          <div class="dot top-[75%] left-[87%]" style="--delay: 0.6s" onclick="toggleTooltip(this)" role="button" tabindex="0">
             <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Sydney</div>
           </div>
-          <div class="dot top-[28%] left-[72%]" style="--delay: 0.9">
+          <div class="dot top-[28%] left-[72%]" style="--delay: 0.9" onclick="toggleTooltip(this)" role="button" tabindex="0">
             <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Mykonos</div>
           </div>
 
-          <div class="dot top-[20%] left-[62%]" style="--delay: 0.9">
+          <div class="dot top-[20%] left-[62%]" style="--delay: 0.9" onclick="toggleTooltip(this)" role="button" tabindex="0">
             <div class="tooltip -top-6 left-1/2 -translate-x-1/2">
               Cape town
             </div>
@@ -592,30 +592,24 @@
         setTimeout(() => {
           navbar.classList.remove("opacity-0", "-translate-y-10");
           navbar.classList.add("opacity-100", "translate-y-0");
-        }, 300); // Smooth fade-in effect
+        }, 300);
 
-        // Define animated elements
         const animatedElements = [
-          // "Our Commitment" Section
           document.getElementById("title"),
           document.getElementById("subtitle"),
           document.getElementById("paragraph"),
 
-          // "Where Others Hesitate, We Execute" Section
           document.getElementById("title-execute"),
           document.getElementById("paragraph-execute"),
           document.getElementById("button-execute"),
         ];
 
-        // Select all elements within "Our Specialities" **including spans**
         const specialitiesElements = document.querySelectorAll(
           "#Our-Specialities .fade-move-up, #Our-Specialities img, #contact-us h1, #contact-us p,  #Our-Specialities h2, #Our-Specialities h1, #Our-Specialities p, #Our-Specialities span, #Our-Mission h1"
         );
 
-        // Merge all elements into a single list
         const allElements = [...animatedElements, ...specialitiesElements];
 
-        // Intersection Observer for triggering animations
         const observer = new IntersectionObserver((entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
@@ -638,16 +632,49 @@
       });
     </script>
     <script>
-      function toggleTooltip(dot) {
-        const tooltip = dot.querySelector(".tooltip");
-        tooltip.classList.toggle("opacity-100");
-        tooltip.classList.toggle("pointer-events-auto");
-
-        // Optional: Hide after 3 seconds
-        setTimeout(() => {
-          tooltip.classList.remove("opacity-100", "pointer-events-auto");
-        }, 3000);
+  function toggleTooltip(dot) {
+    const tooltip = dot.querySelector(".tooltip");
+    
+    // Remove tooltip from all others
+    document.querySelectorAll('.tooltip').forEach(el => {
+      if (el !== tooltip) {
+        el.classList.remove("opacity-100", "pointer-events-auto");
       }
-    </script>
+    });
+
+    // Toggle visibility
+    tooltip.classList.toggle("opacity-100");
+    tooltip.classList.toggle("pointer-events-auto");
+
+    // Optional: Auto-hide after 3s
+    setTimeout(() => {
+      tooltip.classList.remove("opacity-100", "pointer-events-auto");
+    }, 3000);
+  }
+</script>
+
+
+<script>
+  function toggleTooltip(dot) {
+    const tooltip = dot.querySelector(".tooltip");
+
+    // Hide all tooltips first
+    document.querySelectorAll(".tooltip").forEach(el => {
+      el.classList.remove("visible");
+    });
+
+    // Show the clicked one
+    tooltip.classList.add("visible");
+
+    // Optional: Auto-hide after 3s
+    setTimeout(() => {
+      tooltip.classList.remove("visible");
+    }, 3000);
+  }
+</script>
+
+
+
+
   </body>
 </html>

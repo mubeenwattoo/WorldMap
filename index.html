@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/css/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="bg-black container-xxl max-w-[1600px] mx-auto md:px-2 py-1">
+      <nav
+        id="navbar"
+        class="py-3 md:px-8 px-3 flex justify-between items-center opacity-0 transform -translate-y-10 transition-all duration-700"
+      >
+        <!-- Logo and Title -->
+        <span
+          class="flex items-center gap-4 lg:text-3xl text-2xl font-bold text-white"
+        >
+          <img src="./assets/images/logo.jpg" alt="logo" class="md:w-28 w-24" />
+        </span>
+
+        <!-- Desktop Navigation (Hidden on Mobile) -->
+        <ul
+          class="md:flex hidden items-center gap-8 lg:text-[1.2rem] text-[0.9rem] text-white"
+        >
+          <li>
+            <a
+              href="/"
+              class="hover:text-[#dadada] duration-300 hover:underline"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#Our-Commitment"
+              class="hover:text-[#dadada] duration-300 hover:underline"
+              >Commitment</a
+            >
+          </li>
+          <li>
+            <a
+              href="#Our-Specialities"
+              class="hover:text-[#dadada] duration-300 hover:underline"
+              >Specialities</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact-us"
+              class="hover:text-[#dadada] duration-300 hover:underline"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <!-- Burger Menu Icon (Mobile) -->
+        <span
+          class="text-white md:hidden flex text-3xl cursor-pointer burger-span"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </span>
+      </nav>
+
+      <!-- Mobile Menu (Initially Hidden) -->
+      <div
+        id="mobileMenu"
+        class="fixed z-20 bg-black top-0 left-0 w-full h-screen flex-col items-center opacity-0 scale-95 hidden transition-all duration-500 ease-in-out"
+      >
+        <!-- Mobile Menu Header (Logo + Title + Close Icon) -->
+        <div
+          class="w-full flex justify-between items-center px-3 py-3 border-b"
+        >
+          <span class="flex items-center gap-4 text-2xl font-bold text-white">
+            <img src="./assets/images/logo.jpg" alt="logo" class="w-24" />
+          </span>
+          <!-- Close Icon -->
+          <span class="text-white text-3xl cursor-pointer close-span">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+
+        <!-- Mobile Menu Links -->
+        <ul
+          class="flex flex-col items-center gap-6 mt-8 text-white font-semibold text-[1.2rem]"
+          id="mobile-ul"
+        >
+          <li>
+            <a
+              href="/"
+              class="hover:text-[#dadada] duration-300 hover:underline"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#Our-Commitment"
+              class="hover:text-[#dadada] duration-300 hover:underline"
+              >Commitment</a
+            >
+          </li>
+          <li>
+            <a
+              href="#Our-Specialities"
+              class="hover:text-[#dadada] duration-300 hover:underline"
+              >Specialities</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact-us"
+              class="hover:text-[#dadada] duration-300 hover:underline"
+              >Contact</a
+            >
+          </li>
+
+          <!--             <button
+            class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-700 duration-300"
+          >
+            Sign Up
+          </button>
+          -->
+        </ul>
+      </div>
+
+      <section
+        id="execution-section"
+        class="flex flex-col py-16 md:flex-row items-center justify-between md:px-8 px-4 md:mt-8 mt-4 gap-10"
+      >
+        <!-- Left Content -->
+        <div class="md:w-1/2 space-y-6 text-white">
+          <h1
+            class="text-4xl md:text-[3.6rem] font-bold leading-tight opacity-0 transform translate-y-10 transition-all duration-700"
+            id="title-execute"
+          >
+            Where others hesitate,<br />we execute.
+          </h1>
+          <p
+            class="text-lg text-gray-200 opacity-0 transform translate-y-10 transition-all duration-700 delay-300"
+            id="paragraph-execute"
+          >
+            From human intelligence to executive protection — 360° security
+            coverage by elite professionals.
+          </p>
+          <a href="#Our-Commitment">
+            <button
+              class="text-white mt-3 px-6 py-3 hover:bg-[#111111] duration-300 border cursor-pointer transition opacity-0 transform translate-y-10 transition-all duration-700 delay-500"
+              id="button-execute"
+            >
+              Learn More
+            </button>
+          </a>
+        </div>
+
+        <!-- Right Content (World Map remains unchanged) -->
+
+        <div class="relative md:w-1/2 w-full">
+          <img
+            src="./assets/images/world-map.png"
+            alt="World Map"
+            class="w-full rounded"
+          />
+          <div class="dot top-[20%] left-[11%]" style="--delay: 0s">
+            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Paris</div>
+          </div>
+          <div class="dot top-[20%] left-[89%]" style="--delay: 0s">
+            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">
+              Rio de Janeiro
+            </div>
+          </div>
+          <div class="dot top-[62%] left-[55%]" style="--delay: 0.3s">
+            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Dubai</div>
+          </div>
+          <div class="dot top-[38%] left-[58%]" style="--delay: 0.6s">
+            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Tel Aviv</div>
+          </div>
+          <div class="dot top-[29%] left-[47%]" style="--delay: 0.9s">
+            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">London</div>
+          </div>
+          <div class="dot top-[20%] left-[82%]" style="--delay: 0.3s">
+            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Berlin</div>
+          </div>
+          <div class="dot top-[12%] left-[35%]" style="--delay: 0.6s">
+            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Miami</div>
+          </div>
+          <div class="dot top-[35%] left-[18%]" style="--delay: 0.9s">
+            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">
+              Bucharest
+            </div>
+          </div>
+          <div class="dot top-[30%] left-[28%]" style="--delay: 0.9s">
+            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">
+              Las Vegas
+            </div>
+          </div>
+
+          <div class="dot top-[75%] left-[30%]" style="--delay: 0.3">
+            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Cancun</div>
+          </div>
+          <div class="dot top-[60%] left-[75%]" style="--delay: 0.6s">
+            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">
+              Singapore
+            </div>
+          </div>
+
+          <div class="dot top-[75%] left-[87%]" style="--delay: 0.6s">
+            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Sydney</div>
+          </div>
+          <div class="dot top-[28%] left-[72%]" style="--delay: 0.9">
+            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Mykonos</div>
+          </div>
+
+          <div class="dot top-[20%] left-[62%]" style="--delay: 0.9">
+            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">
+              Cape town
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="Our-Commitment"
+        class="text-white md:mt-10 md:px-8 px-4 pb-12"
+      >
+        <div class="flex flex-col gap-8">
+          <h1
+            class="text-4xl md:text-[3.6rem] font-bold leading-tight opacity-0 transform translate-y-10 transition-all duration-700"
+            id="title"
+          >
+            Our Commitment
+          </h1>
+          <h3
+            class="text-2xl opacity-0 transform translate-y-10 transition-all duration-700 delay-300"
+            id="subtitle"
+          >
+            We are a private security and intelligence firm built on years of
+            classified government experience.
+          </h3>
+          <p
+            class="text-lg text-gray-200 opacity-0 transform translate-y-10 transition-all duration-700 delay-500"
+            id="paragraph"
+          >
+            We specialize in human intelligence, real-time crisis response, risk
+            assessment, and executive protection — operating globally with
+            absolute discretion and military precision. Our team has safeguarded
+            heads of state, sensitive operations, and critical infrastructure
+            under the most demanding conditions. Now, that same elite capability
+            is available to protect your mission.
+          </p>
+        </div>
+      </section>
+
+      <section id="Our-Specialities" class="text-white lg:mt-20 mt-14 pb-10">
+        <h1
+          id="title-specialities"
+          class="mx-auto text-center text-4xl md:text-[3.6rem] font-bold opacity-0 translate-y-10"
+        >
+          Our Specialities
+        </h1>
+
+        <div
+          class="flex flex-col md:flex-row items-start justify-between md:px-8 px-4 mt-16 gap-10 fade-move-up"
+        >
+          <div class="relative md:w-1/2 w-full">
+            <img
+              id="image-1"
+              src="./assets/images/chatgpt-3.png"
+              alt="World Map"
+              class="rounded opacity-0 translate-y-10"
+            />
+          </div>
+          <div class="md:w-1/2 space-y-6 text-white">
+            <h2
+              id="title-1"
+              class="text-3xl md:text-4xl font-bold leading-tight opacity-0 translate-y-10"
+            >
+              Executive Protection
+            </h2>
+            <p
+              id="paragraph-1"
+              class="text-lg text-gray-200 opacity-0 translate-y-10"
+            >
+              Tailored security for high-risk individuals in any environment.
+              Our protection units operate with precision and discretion.
+            </p>
+            <p
+              id="specialities-span"
+              class="text-2xl font-bold font-mono opacity-0 translate-y-10"
+            >
+              "Protection you don’t see. Until it matters."
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row items-start justify-between md:px-8 px-4 mt-24 gap-10 fade-move-up"
+        >
+          <div class="md:w-1/2 space-y-6 text-white">
+            <h2
+              id="title-1"
+              class="text-3xl md:text-4xl font-bold leading-tight opacity-0 translate-y-10"
+            >
+              Creative Intelligence
+            </h2>
+            <p
+              id="paragraph-1"
+              class="text-lg text-gray-200 opacity-0 translate-y-10"
+            >
+              We integrate advanced technological intelligence with expert
+              human-sourced insights to deliver a complete, real-time
+              understanding of evolving threats. Our operatives combine deep
+              field experience and trusted networks with cutting-edge data
+              analytics, signal interception, and cyber tools to uncover
+              critical information, support strategic decisions, and proactively
+              neutralize risks before they materialize.
+            </p>
+            <p
+              id="specialities-span"
+              class="text-2xl font-bold font-mono opacity-0 translate-y-10"
+            >
+              "Trusted intelligence. Covert capabilities. Strategic advantage."
+            </p>
+          </div>
+
+          <div class="relative md:w-1/2 w-full">
+            <img
+              id="image-1"
+              src="./assets/images/chatgpt-4.png"
+              alt="World Map"
+              class="rounded opacity-0 translate-y-10"
+            />
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row items-start justify-between md:px-8 px-4 mt-24 gap-10 fade-move-up"
+        >
+          <div class="relative md:w-1/2 w-full">
+            <img
+              id="image-1"
+              src="./assets/images/risk_assessment.png"
+              alt="World Map"
+              class="rounded opacity-0 translate-y-10"
+            />
+          </div>
+          <div class="md:w-1/2 space-y-6 text-white">
+            <h2
+              id="title-1"
+              class="text-3xl md:text-4xl font-bold leading-tight opacity-0 translate-y-10"
+            >
+              Risk Assessment
+            </h2>
+            <p
+              id="paragraph-1"
+              class="text-lg text-gray-200 opacity-0 translate-y-10"
+            >
+              We deliver precise, actionable assessments of threats to
+              individuals, operations, and assets. Our process integrates
+              geopolitical analysis, behavioral profiling, and environmental
+              surveillance to map vulnerabilities and enable informed planning .
+            </p>
+            <p
+              id="specialities-span"
+              class="text-2xl font-bold font-mono opacity-0 translate-y-10"
+            >
+              "Know the risk. Control the outcome"
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row items-start justify-between md:px-8 px-4 mt-24 gap-10 fade-move-up"
+        >
+          <div class="md:w-1/2 space-y-6 text-white">
+            <h2
+              id="title-1"
+              class="text-3xl md:text-4xl font-bold leading-tight opacity-0 translate-y-10"
+            >
+              Real-Time Crisis Response
+            </h2>
+            <p
+              id="paragraph-1"
+              class="text-lg text-gray-200 opacity-0 translate-y-10"
+            >
+              When the unexpected strikes, we mobilize immediately. From
+              high-stakes incidents to covert extraction, our teams are trained
+              to neutralize threats, stabilize situations, and restore control
+              under extreme pressure.
+            </p>
+            <p
+              id="specialities-span"
+              class="text-2xl font-bold font-mono opacity-0 translate-y-10"
+            >
+              "Fast decisions. Immediate action. Complete discretion."
+            </p>
+          </div>
+
+          <div class="relative md:w-1/2 w-full">
+            <img
+              id="image-1"
+              src="./assets/images/rescue-operation.png"
+              alt="World Map"
+              class="rounded opacity-0 translate-y-10"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="Our-Mission" class="lg:mt-16 md:mt-12 mt-4 py-8 mb-5">
+        <h1
+          class="text-white px-4 text-4xl md:text-[3.6rem] font-bold leading-tight opacity-0 transform translate-y-10 transition-all duration-700"
+        >
+          OUR VALUES
+        </h1>
+
+        <!-- Row 1: Left to Right (actually left scroll) -->
+        <div class="overflow-hidden whitespace-nowrap mt-10">
+          <div class="scroll-left flex w-max">
+            <ul class="flex gap-10 text-lg font-semibold text-white">
+              <li>Discipline</li>
+              <li>Discretion</li>
+              <li>Loyalty</li>
+              <li>Decisiveness</li>
+              <li>Adaptability</li>
+              <li>Trust</li>
+              <li>Professionalism</li>
+              <li>Accountability</li>
+              <li>Operational Excellence</li>
+              <li>Legal</li>
+              <li>Ethical</li>
+              <li>Integrity</li>
+              <li></li>
+            </ul>
+            <ul class="flex gap-10 text-lg font-semibold text-white">
+              <li>Discipline</li>
+              <li>Discretion</li>
+              <li>Loyalty</li>
+              <li>Decisiveness</li>
+              <li>Adaptability</li>
+              <li>Trust</li>
+              <li>Professionalism</li>
+              <li>Accountability</li>
+              <li>Operational Excellence</li>
+
+              <li>Legal</li>
+              <li>Ethical</li>
+              <li>Integrity</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Row 2: Right to Left (actually right scroll) -->
+        <div class="overflow-hidden whitespace-nowrap mt-6">
+          <div class="scroll-right flex w-max">
+            <ul class="flex gap-10 text-lg font-semibold text-white">
+              <li>Discipline</li>
+              <li>Discretion</li>
+              <li>Loyalty</li>
+              <li>Decisiveness</li>
+              <li>Adaptability</li>
+              <li>Trust</li>
+              <li>Professionalism</li>
+              <li>Accountability</li>
+              <li>Operational Excellence</li>
+
+              <li>Legal</li>
+              <li>Ethical</li>
+              <li>Integrity</li>
+              <li></li>
+            </ul>
+            <ul class="flex gap-10 text-lg font-semibold text-white">
+              <li>Discipline</li>
+              <li>Discretion</li>
+              <li>Loyalty</li>
+              <li>Decisiveness</li>
+              <li>Adaptability</li>
+              <li>Trust</li>
+              <li>Professionalism</li>
+              <li>Accountability</li>
+              <li>Operational Excellence</li>
+              <li>Legal</li>
+              <li>Ethical</li>
+              <li>Integrity</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="contact-us" class="lg:mt-16 md:mt-12 mt-4 py-8 mb-5 md:px-6">
+        <h1
+          class="text-white mx-auto text-center text-4xl md:text-[3.6rem] font-bold leading-tight opacity-0 transform translate-y-10 transition-all duration-700"
+        >
+          CONTACT US
+        </h1>
+
+        <div
+          class="text-white flex flex-col gap-2 items-center justify-between mt-10"
+        >
+          <p
+            class="text-2xl py-4 font-semibold opacity-0 transform translate-y-10 transition-all duration-700"
+          >
+            24/7 Direct Contact:
+          </p>
+
+          <a
+            href="https://wa.me/972 53-355-0054"
+            target="_blank"
+            class="text-white whatsapp rounded-lg flex items-center gap-2 text-2xl font-semibold"
+          >
+            <i class="fab fa-whatsapp text-2xl"></i> +972 53-355-0054
+          </a>
+
+          <p
+            class="text-2xl mt-2 font-semibold opacity-0 transform translate-y-10 transition-all duration-700"
+          >
+            desk@shinobiforce.com
+          </p>
+        </div>
+      </section>
+
+      <footer class="mx-auto text-center text-white mb-5">
+        <p>Copyright © 2025 Shinobi Force Ltd.</p>
+        <a href="/">
+          <img
+            src="./assets/images/logo.jpg"
+            alt="logo"
+            class="w-32 mx-auto mt-2"
+          />
+        </a>
+      </footer>
+    </div>
+
+    <!-- jQuery (For Menu Toggle) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".burger-span").click(function () {
+          $("#mobileMenu")
+            .removeClass("hidden opacity-0 scale-95")
+            .addClass("opacity-100 scale-100")
+            .css("transform", "translateY(0%)");
+
+          $(".burger-span").addClass("hidden");
+        });
+
+        $(".close-span").click(function () {
+          $("#mobileMenu")
+            .css("transform", "translateY(-100%)")
+            .removeClass("opacity-100 scale-100")
+            .addClass("opacity-0 scale-95");
+
+          setTimeout(() => {
+            $("#mobileMenu").addClass("hidden");
+            $(".burger-span").removeClass("hidden");
+          }, 500);
+        });
+
+        $(window).resize(function () {
+          if ($(window).width() >= 768) {
+            $("#mobileMenu")
+              .addClass("hidden opacity-0 scale-95")
+              .css("transform", "translateY(-100%)");
+            $(".burger-span").removeClass("hidden");
+          }
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const observerOptions = { threshold: 0.2 }; // Trigger animation when 20% is visible
+
+        // Navbar Animation (Triggers on Page Load)
+        const navbar = document.getElementById("navbar");
+        setTimeout(() => {
+          navbar.classList.remove("opacity-0", "-translate-y-10");
+          navbar.classList.add("opacity-100", "translate-y-0");
+        }, 300); // Smooth fade-in effect
+
+        // Define animated elements
+        const animatedElements = [
+          // "Our Commitment" Section
+          document.getElementById("title"),
+          document.getElementById("subtitle"),
+          document.getElementById("paragraph"),
+
+          // "Where Others Hesitate, We Execute" Section
+          document.getElementById("title-execute"),
+          document.getElementById("paragraph-execute"),
+          document.getElementById("button-execute"),
+        ];
+
+        // Select all elements within "Our Specialities" **including spans**
+        const specialitiesElements = document.querySelectorAll(
+          "#Our-Specialities .fade-move-up, #Our-Specialities img, #contact-us h1, #contact-us p,  #Our-Specialities h2, #Our-Specialities h1, #Our-Specialities p, #Our-Specialities span, #Our-Mission h1"
+        );
+
+        // Merge all elements into a single list
+        const allElements = [...animatedElements, ...specialitiesElements];
+
+        // Intersection Observer for triggering animations
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.remove("opacity-0", "translate-y-10");
+              entry.target.classList.add(
+                "opacity-100",
+                "translate-y-0",
+                "transition-all",
+                "duration-700",
+                "ease-out"
+              );
+            }
+          });
+        }, observerOptions);
+
+        // Observe each element
+        allElements.forEach((element) => {
+          if (element) observer.observe(element); // Ensure valid elements are observed
+        });
+      });
+    </script>
+  </body>
+</html>

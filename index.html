@@ -150,7 +150,7 @@
           </p>
           <a href="#Our-Commitment">
             <button
-              class="text-white mt-3 px-6 py-3 hover:bg-[#111111] duration-300 border cursor-pointer transition opacity-0 transform translate-y-10 transition-all duration-700 delay-500"
+              class="text-white mt-3 px-6 py-3 hover:bg-gray-900 border cursor-pointer opacity-0 transform translate-y-10 transition-all delay-100"
               id="button-execute"
             >
               Learn More
@@ -256,7 +256,7 @@
         </div>
       </section>
 
-      <section id="Our-Specialities" class="text-white lg:mt-20 mt-14 pb-10">
+      <section id="Our-Specialities" class="text-white lg:mt-20 mt-10 pb-10">
         <h1
           id="title-specialities"
           class="mx-auto text-center text-4xl md:text-[3.6rem] font-bold opacity-0 translate-y-10"
@@ -265,7 +265,7 @@
         </h1>
 
         <div
-          class="flex flex-col md:flex-row items-start justify-between md:px-8 px-4 mt-16 gap-10 fade-move-up"
+          class="flex flex-col md:flex-row items-start justify-between md:px-8 px-4 lg:mt-16 mt-8 gap-10 fade-move-up"
         >
           <div class="relative md:w-1/2 w-full">
             <img
@@ -299,7 +299,7 @@
         </div>
 
         <div
-          class="flex flex-col md:flex-row items-start justify-between md:px-8 px-4 mt-24 gap-10 fade-move-up"
+          class="flex flex-col-reverse md:flex-row items-start justify-between md:px-8 px-4 lg:mt-24 mt-8 gap-10 fade-move-up"
         >
           <div class="md:w-1/2 space-y-6 text-white">
             <h2
@@ -339,7 +339,7 @@
         </div>
 
         <div
-          class="flex flex-col md:flex-row items-start justify-between md:px-8 px-4 mt-24 gap-10 fade-move-up"
+          class="flex flex-col md:flex-row items-start justify-between md:px-8 px-4 lg:mt-24 mt-8 gap-10 fade-move-up"
         >
           <div class="relative md:w-1/2 w-full">
             <img
@@ -375,7 +375,7 @@
         </div>
 
         <div
-          class="flex flex-col md:flex-row items-start justify-between md:px-8 px-4 mt-24 gap-10 fade-move-up"
+          class="flex flex-col-reverse md:flex-row items-start justify-between md:px-8 px-4 lg:mt-24 mt-8 gap-10 fade-move-up"
         >
           <div class="md:w-1/2 space-y-6 text-white">
             <h2
@@ -538,6 +538,7 @@
 
     <script>
       $(document).ready(function () {
+        // Open menu
         $(".burger-span").click(function () {
           $("#mobileMenu")
             .removeClass("hidden opacity-0 scale-95")
@@ -547,7 +548,8 @@
           $(".burger-span").addClass("hidden");
         });
 
-        $(".close-span").click(function () {
+        // Function to close menu
+        function closeMobileMenu() {
           $("#mobileMenu")
             .css("transform", "translateY(-100%)")
             .removeClass("opacity-100 scale-100")
@@ -557,8 +559,19 @@
             $("#mobileMenu").addClass("hidden");
             $(".burger-span").removeClass("hidden");
           }, 500);
+        }
+
+        // Close icon click
+        $(".close-span").click(function () {
+          closeMobileMenu();
         });
 
+        // Link click (inside mobile menu)
+        $("#mobile-ul a").click(function () {
+          closeMobileMenu();
+        });
+
+        // Handle resizing (close menu if going to desktop)
         $(window).resize(function () {
           if ($(window).width() >= 768) {
             $("#mobileMenu")
@@ -623,6 +636,18 @@
           if (element) observer.observe(element); // Ensure valid elements are observed
         });
       });
+    </script>
+    <script>
+      function toggleTooltip(dot) {
+        const tooltip = dot.querySelector(".tooltip");
+        tooltip.classList.toggle("opacity-100");
+        tooltip.classList.toggle("pointer-events-auto");
+
+        // Optional: Hide after 3 seconds
+        setTimeout(() => {
+          tooltip.classList.remove("opacity-100", "pointer-events-auto");
+        }, 3000);
+      }
     </script>
   </body>
 </html>

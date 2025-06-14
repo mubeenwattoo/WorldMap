@@ -94,3 +94,6 @@ body {
     font-size: 16px;
   }
 }
+.glow {
+  text-shadow: 0 0 8px white, 0 0 36px white, 0 0 20px white;
+}

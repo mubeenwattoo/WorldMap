@@ -162,7 +162,7 @@
             id="paragraph-execute"
           >
             From human intelligence to executive protection — 360° security
-            coverage by elite professionals.
+            scope by elite professionals.
           </p>
           <a href="#Our-Commitment">
             <button
@@ -205,6 +205,9 @@
           <div class="dot top-[47%] left-[25%]" style="--delay: 0.6s" onclick="toggleTooltip(this)" role="button" tabindex="0">
             <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Miami</div>
           </div>
+          <div class="dot top-[36%] left-[28%]" style="--delay: 0.6s" onclick="toggleTooltip(this)" role="button" tabindex="0">
+            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">New York</div>
+          </div>
          
           <div class="dot top-[30%] left-[57%]" style="--delay: 0.6s" onclick="toggleTooltip(this)" role="button" tabindex="0">
             <div class="tooltip -top-6 left-1/2 -translate-x-1/2">
@@ -229,6 +232,12 @@
           <div class="dot top-[75%] left-[87%]" style="--delay: 0.6s" onclick="toggleTooltip(this)" role="button" tabindex="0">
             <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Sydney</div>
           </div>
+
+
+  <div class="dot top-[40%] left-[85%]" style="--delay: 0.6s" onclick="toggleTooltip(this)" role="button" tabindex="0">
+            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Tokyo</div>
+          </div>
+
           <div class="dot top-[37%] left-[52%]" style="--delay: 0.9" onclick="toggleTooltip(this)" role="button" tabindex="0">
             <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Mykonos</div>
           </div>
@@ -238,6 +247,12 @@
               Cape town
             </div>
           </div>
+<div class="dot top-[55%] left-[48%]" style="--delay: 0.9" onclick="toggleTooltip(this)" role="button" tabindex="0">
+            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">
+            Lagos
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -432,7 +447,7 @@
         <h1
           class=" before:absolute text-center pt-8 before:top-0 before:left-0 before:w-full before:h-px before:bg-gray-500  text-white px-4 text-4xl md:text-[3.6rem] font-bold leading-tight opacity-0 transform translate-y-10 transition-all duration-700"
         >
-          OUR VALUES
+          Our Values
         </h1>
 
         <!-- Row 1: Left to Right (actually left scroll) -->
@@ -506,14 +521,14 @@
         <h1
           class=" before:absolute pt-8 before:top-0 before:left-0 before:w-full before:h-px before:bg-gray-500 text-white mx-auto text-center text-4xl md:text-[3.6rem] font-bold leading-tight opacity-0 transform translate-y-10 transition-all duration-700"
         >
-          CONTACT US 24/7
+          Reach Out. Anytime. Anywhere.
         </h1>
 
         <div
           class="text-white flex flex-col gap-2 items-center justify-between mt-10"
         >
          
-<div class="flex items-center gap-4">
+<div class="flex items-center sm:flex-row flex-col gap-4">
           <a
             href="https://wa.me/972533550054"
             target="_blank"
@@ -521,7 +536,7 @@
           >
             <i class="fab fa-whatsapp text-text-[1.1rem]"></i> +972 53-355-0054
           </a>
-<span>|</span>
+<span class="sm:flex hidden">|</span>
           <p
             class="md:text-[1.3rem] sm:text-[1.1rem] text-[1rem] font-semibold opacity-0 transform translate-y-10 transition-all duration-700"
           >
@@ -533,7 +548,7 @@
 
 
  <p
-            class=" py-4 font-semibold opacity-0 transform translate-y-10 transition-all duration-700"
+            class="glow md:text-xl py-4 font-bold text-center opacity-0 transform translate-y-10 transition-all duration-700"
           >
           ALL INQUIRIES HANDLED IN FULL CONFIDENTIALITY.
           </p>
@@ -601,10 +616,9 @@
           }
         });
       });
-    </script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
+
+  document.addEventListener("DOMContentLoaded", function () {
         const observerOptions = { threshold: 0.2 }; // Trigger animation when 20% is visible
 
         // Navbar Animation (Triggers on Page Load)
@@ -650,9 +664,9 @@
           if (element) observer.observe(element); // Ensure valid elements are observed
         });
       });
-    </script>
-    <script>
-  function toggleTooltip(dot) {
+
+
+ function toggleTooltip(dot) {
     const tooltip = dot.querySelector(".tooltip");
     
     // Remove tooltip from all others
@@ -671,31 +685,36 @@
       tooltip.classList.remove("opacity-100", "pointer-events-auto");
     }, 3000);
   }
-</script>
 
 
-<script>
-  function toggleTooltip(dot) {
+function toggleTooltip(dot) {
     const tooltip = dot.querySelector(".tooltip");
 
-    // Hide all tooltips first
     document.querySelectorAll(".tooltip").forEach(el => {
       el.classList.remove("visible");
     });
 
-    // Show the clicked one
     tooltip.classList.add("visible");
 
-    // Optional: Auto-hide after 3s
     setTimeout(() => {
       tooltip.classList.remove("visible");
     }, 3000);
   }
-</script>
 
 
+ document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+  });
 
-
-
+  document.addEventListener("keydown", function (e) {
+    if (
+      e.key === "F12" ||
+      (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) ||
+      (e.ctrlKey && e.key === "U")
+    ) {
+      e.preventDefault();
+    }
+  });
+    </script>
   </body>
 </html>

@@ -13,144 +13,102 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
 
-<link rel="shortcut icon" href="./assets/images/logo.jpg" type="image/x-icon">
+<link rel="shortcut icon" href="./assets/images/favicon.jpg" type="image/x-icon">
 
 
   </head>
   <body>
     <div class="bg-black container-xxl max-w-[1600px] mx-auto md:px-4 py-1">
-      <nav
-        id="navbar"
-        class="py-3 md:px-6 px-4 flex justify-between items-center opacity-0 transform -translate-y-10 transition-all duration-700"
-      >
-        <!-- Logo and Title -->
-        <span
-          class="flex items-center gap-4 lg:text-3xl text-2xl font-bold text-white"
-        >
-          <img src="./assets/images/logo.jpg" alt="logo" class="md:w-28 w-24" />
-        </span>
+     <!-- Navbar -->
+<nav
+  id="navbar"
+  class="py-3 md:px-6 px-4 flex justify-between items-center opacity-0 transform -translate-y-10 transition-all duration-700"
+>
+  <!-- Logo and Title -->
+  <span class="flex items-center gap-4 lg:text-3xl text-2xl font-bold text-white">
 
-        <!-- Desktop Navigation (Hidden on Mobile) -->
-        <ul
-          class="md:flex hidden items-center gap-8 lg:text-[1.2rem] text-[0.9rem] text-white"
-        >
-          <li>
-            <a
-              href="#execution-section"
-              class="hover:text-[#dadada] duration-300 hover:underline"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="#Our-Commitment"
-              class="hover:text-[#dadada] duration-300 hover:underline"
-              >Commitment</a
-            >
-          </li>
-          <li>
-            <a
-              href="#Our-Specialities"
-              class="hover:text-[#dadada] duration-300 hover:underline"
-              >Specialities</a
-            >
-          </li>
+ <a href="#home" class="scroll-link"
+        data-target="home"
+     data-url="/home">
 
-<li>
-            <a
-              href="#Our-Mission"
-              class="hover:text-[#dadada] duration-300 hover:underline"
-              >Values</a
-            >
-          </li>
+    <img src="./assets/images/logo.jpg" alt="logo" class="md:w-28 w-24" />
+    </a>
+  </span>
 
-          <li>
-            <a
-              href="#contact-us"
-              class="hover:text-[#dadada] duration-300 hover:underline"
-              >Contact</a
-            >
-          </li>
-        </ul>
+  <!-- Desktop Navigation -->
+  <ul class="md:flex hidden items-center gap-8 lg:text-[1.2rem] text-[0.9rem] text-white">
+    <li>
+      <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline"
+         data-target="home" data-url="/home">Home</a>
+    </li>
+    <li>
+      <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline"
+         data-target="Our-Commitment" data-url="/our-commitment">Commitment</a>
+    </li>
+    <li>
+      <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline"
+         data-target="Our-Specialities" data-url="/our-specialities">Specialities</a>
+    </li>
+    <li>
+      <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline"
+         data-target="Our-Values" data-url="/our-values">Values</a>
+    </li>
+    <li>
+      <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline"
+         data-target="contact-us" data-url="/contact-us">Contact</a>
+    </li>
+  </ul>
 
-        <!-- Burger Menu Icon (Mobile) -->
-        <span
-          class="text-white md:hidden flex text-3xl cursor-pointer burger-span"
-        >
-          <i class="fa-solid fa-bars"></i>
-        </span>
-      </nav>
+  <!-- Burger Icon (Mobile) -->
+  <span class="text-white md:hidden flex text-3xl cursor-pointer burger-span">
+    <i class="fa-solid fa-bars"></i>
+  </span>
+</nav>
 
-      <!-- Mobile Menu (Initially Hidden) -->
-      <div
-        id="mobileMenu"
-        class="fixed z-20 bg-black top-0 left-0 w-full h-screen flex-col items-center opacity-0 scale-95 hidden transition-all duration-500 ease-in-out"
-      >
-        <!-- Mobile Menu Header (Logo + Title + Close Icon) -->
-        <div
-          class="w-full flex justify-between items-center px-3 py-3 border-b"
-        >
-          <span class="flex items-center gap-4 text-2xl font-bold text-white">
-            <img src="./assets/images/logo.jpg" alt="logo" class="w-24" />
-          </span>
-          <!-- Close Icon -->
-          <span class="text-white text-3xl cursor-pointer close-span">
-            <i class="fa-solid fa-xmark"></i>
-          </span>
-        </div>
+<!-- Mobile Menu -->
+<div
+  id="mobileMenu"
+  class="fixed z-20 bg-black top-0 left-0 w-full h-screen flex-col items-center opacity-0 scale-95 hidden transition-all duration-500 ease-in-out"
+>
+  <!-- Header -->
+  <div class="w-full flex justify-between items-center px-3 py-3 border-b">
+    <span class="flex items-center gap-4 text-2xl font-bold text-white">
+         <img src="./assets/images/logo.jpg" alt="logo" class="w-24" />
+    </span>
+    <!-- Close Icon -->
+    <span class="text-white text-3xl cursor-pointer close-span">
+      <i class="fa-solid fa-xmark"></i>
+    </span>
+  </div>
 
-        <!-- Mobile Menu Links -->
-        <ul
-          class="flex flex-col items-center gap-6 mt-8 text-white font-semibold text-[1.2rem]"
-          id="mobile-ul"
-        >
-          <li>
-            <a
-              href="#execution-section"
-              class="hover:text-[#dadada] duration-300 hover:underline"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="#Our-Commitment"
-              class="hover:text-[#dadada] duration-300 hover:underline"
-              >Commitment</a
-            >
-          </li>
-          <li>
-            <a
-              href="#Our-Specialities"
-              class="hover:text-[#dadada] duration-300 hover:underline"
-              >Specialities</a
-            >
-          </li>
-          <li>
-            <a
-              href="#Our-Mission"
-              class="hover:text-[#dadada] duration-300 hover:underline"
-              >Values</a
-            >
-          </li>
-          <li>
-            <a
-              href="#contact-us"
-              class="hover:text-[#dadada] duration-300 hover:underline"
-              >Contact</a
-            >
-          </li>
+  <!-- Mobile Links -->
+  <ul class="flex flex-col items-center gap-6 mt-8 text-white font-semibold text-[1.2rem]" id="mobile-ul">
+    <li>
+      <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline"
+         data-target="home" data-url="/home">Home</a>
+    </li>
+    <li>
+      <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline"
+         data-target="Our-Commitment" data-url="/our-commitment">Commitment</a>
+    </li>
+    <li>
+      <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline"
+         data-target="Our-Specialities" data-url="/our-specialities">Specialities</a>
+    </li>
+    <li>
+      <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline"
+         data-target="Our-Values" data-url="/our-values">Values</a>
+    </li>
+    <li>
+      <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline"
+         data-target="contact-us" data-url="/contact">Contact</a>
+    </li>
+  </ul>
+</div>
 
-          <!--             <button
-            class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-700 duration-300"
-          >
-            Sign Up
-          </button>
-          -->
-        </ul>
-      </div>
 
       <section
-        id="execution-section"
+        id="home"
         class="flex flex-col py-16 xl:mt-10 md:flex-row items-center justify-between md:px-6 px-4 mt-4 gap-10"
       >
         <!-- Left Content -->
@@ -168,7 +126,12 @@
             From human intelligence to executive protection — 360° security
             scope by elite professionals.
           </p>
-          <a href="#Our-Commitment">
+          <a href="#"
+          
+class="scroll-link"
+
+     data-target="Our-Commitment" data-url="/our-commitment"
+          >
             <button
               class="text-white mt-2 px-6 py-3 hover:bg-gray-900 border cursor-pointer opacity-0 transform translate-y-10 transition-all delay-100"
               id="button-execute"
@@ -447,7 +410,7 @@
           </div>
         </div>
       </section>
-      <section id="Our-Mission" class="lg:mt-16 md:mt-12 mt-4 py-8 mb-5 md:px-6 px-4">
+      <section id="Our-Values" class="lg:mt-16 md:mt-12 mt-4 py-8 mb-5 md:px-6 px-4">
         <h1
           class=" before:absolute text-center pt-8 before:top-0 before:left-0 before:w-full before:h-px before:bg-gray-500  text-white px-4 text-4xl md:text-[3.6rem] font-bold leading-tight opacity-0 transform translate-y-10 transition-all duration-700"
         >
@@ -562,7 +525,9 @@
 
       <footer class="mx-auto text-center text-white mb-5 mt-[-2rem]">
         <p>Copyright © 2025 Shinobi Force Ltd.</p>
-        <a href="#execution-section">
+        <a href="#home" class="scroll-link"
+        data-target="home"
+     data-url="/home">
           <img
             src="./assets/images/logo.jpg"
             alt="logo"
@@ -643,7 +608,7 @@
         ];
 
         const specialitiesElements = document.querySelectorAll(
-          "#Our-Specialities .fade-move-up, #Our-Specialities img, #contact-us h1, #contact-us p,  #Our-Specialities h2, #Our-Specialities h1, #Our-Specialities p, #Our-Specialities span, #Our-Mission h1"
+          "#Our-Specialities .fade-move-up, #Our-Specialities img, #contact-us h1, #contact-us p,  #Our-Specialities h2, #Our-Specialities h1, #Our-Specialities p, #Our-Specialities span, #Our-Values h1"
         );
 
         const allElements = [...animatedElements, ...specialitiesElements];
@@ -705,20 +670,8 @@ function toggleTooltip(dot) {
     }, 3000);
   }
 
+//js to disable right click
 
- document.addEventListener("contextmenu", function (e) {
-    e.preventDefault();
-  });
-
-  document.addEventListener("keydown", function (e) {
-    if (
-      e.key === "F12" ||
-      (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) ||
-      (e.ctrlKey && e.key === "U")
-    ) {
-      e.preventDefault();
-    }
-  });
 
   // Get the navbar element
 const navbar = document.getElementById('navbar');
@@ -737,6 +690,73 @@ function handleScroll() {
 
 // Event listener for scroll events
 window.addEventListener('scroll', handleScroll);
+//js for urls of the page
+
+
+
+
+
+
+
+
+  // Scroll to section and update URL
+  document.querySelectorAll('.scroll-link').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('data-target');
+      const newUrl = this.getAttribute('data-url');
+      const targetSection = document.getElementById(targetId);
+
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+        history.pushState(null, null, newUrl);
+
+        // Close mobile menu if open
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (mobileMenu.classList.contains('flex')) {
+          mobileMenu.classList.add('opacity-0', 'scale-95', 'hidden');
+          mobileMenu.classList.remove('opacity-100', 'scale-100');
+        }
+      }
+    });
+  });
+
+  // Toggle mobile menu
+  const burger = document.querySelector('.burger-span');
+  const close = document.querySelector('.close-span');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  burger.addEventListener('click', () => {
+    mobileMenu.classList.remove('hidden');
+    mobileMenu.classList.add('flex', 'opacity-100', 'scale-100');
+  });
+
+  close.addEventListener('click', () => {
+    mobileMenu.classList.add('opacity-0', 'scale-95', 'hidden');
+    mobileMenu.classList.remove('opacity-100', 'scale-100');
+  });
+
+
+
+
+
+
+//js to disable right click
+
+ document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (
+      e.key === "F12" ||
+      (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) ||
+      (e.ctrlKey && e.key === "U")
+    ) {
+      e.preventDefault();
+    }
+  });
 
     </script>
   </body>

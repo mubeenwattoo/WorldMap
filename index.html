@@ -1,748 +1,669 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./assets/css/output.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
 
-<link rel="shortcut icon" href="./assets/images/favicon.jpg" type="image/x-icon">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./assets/css/output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+  <link rel="shortcut icon" href="./assets/images/favicon.jpg" type="image/x-icon">
 
 
-  </head>
-  <body>
+</head>
 
-<nav
-  id="navbar"
-  class="py-3 md:px-6 px-4 flex justify-between items-center opacity-0 transform -translate-y-10 transition-all duration-700"
->
-  <!-- Logo and Title -->
-  <span class="flex items-center gap-4 lg:text-3xl text-2xl font-bold text-white">
+<body>
 
- <a href="#home" class="scroll-link"
-        data-target="home"
-     data-url="/home">
+  <nav id="navbar"
+    class="py-3 md:px-6 px-4 flex justify-between items-center opacity-0 transform -translate-y-10 transition-all duration-700">
+    <!-- Logo and Title -->
+    <span class="flex items-center gap-4 lg:text-3xl text-2xl font-bold text-white">
 
-    <img src="./assets/images/logo.png" alt="logo" class="md:w-28 w-24" />
-    </a>
-  </span>
+      <a href="#home" class="scroll-link" data-target="home" data-url="/home">
 
-  <!-- Desktop Navigation -->
-  <ul class="md:flex hidden items-center gap-8 lg:text-[1.2rem] text-[0.9rem] text-white">
-    <li>
-      <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline"
-         data-target="home" data-url="/home">Home</a>
-    </li>
-    <li>
-      <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline"
-         data-target="Our-Commitment" data-url="/our-commitment">Commitment</a>
-    </li>
-    <li>
-      <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline"
-         data-target="Our-Specialities" data-url="/our-specialities">Specialities</a>
-    </li>
-    <li>
-      <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline"
-         data-target="Our-Values" data-url="/our-values">Values</a>
-    </li>
-    <li>
-      <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline"
-         data-target="contact-us" data-url="/contact-us">Contact</a>
-    </li>
-  </ul>
-
-  <!-- Burger Icon (Mobile) -->
-  <span class="text-white md:hidden flex text-3xl cursor-pointer burger-span">
-    <i class="fa-solid fa-bars"></i>
-  </span>
-</nav>
-
-<!-- Mobile Menu -->
-<div
-  id="mobileMenu"
-  class="fixed z-50 bg-black top-0 left-0 w-full h-screen flex-col items-center opacity-0 scale-95 hidden transition-all duration-500 ease-in-out"
->
-  <!-- Header -->
-  <div class="w-full flex justify-between items-center px-3 py-3 border-b">
-    <span class="flex items-center gap-4 text-2xl font-bold text-white">
-         <img src="./assets/images/logo.png" alt="logo" class="w-24" />
+        <img src="./assets/images/logo.png" alt="logo" class="md:w-28 w-24" />
+      </a>
     </span>
-    <!-- Close Icon -->
-    <span class="text-white text-3xl cursor-pointer close-span">
-      <i class="fa-solid fa-xmark"></i>
+
+    <!-- Desktop Navigation -->
+    <ul class="md:flex hidden items-center gap-8 lg:text-[1.2rem] text-[0.9rem] text-white">
+      <li>
+        <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline" data-target="home"
+          data-url="/home">Home</a>
+      </li>
+      <li>
+        <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline" data-target="Our-Commitment"
+          data-url="/our-commitment">Commitment</a>
+      </li>
+      <li>
+        <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline" data-target="Our-Specialities"
+          data-url="/our-specialities">Specialities</a>
+      </li>
+      <li>
+        <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline" data-target="Our-Values"
+          data-url="/our-values">Values</a>
+      </li>
+      <li>
+        <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline" data-target="contact-us"
+          data-url="/contact-us">Contact</a>
+      </li>
+    </ul>
+
+    <!-- Burger Icon (Mobile) -->
+    <span class="text-white md:hidden flex text-3xl cursor-pointer burger-span">
+      <i class="fa-solid fa-bars"></i>
     </span>
-  </div>
+  </nav>
 
-  <!-- Mobile Links -->
-  <ul class="flex flex-col items-center gap-6 mt-8 text-white font-semibold text-[1.2rem]" id="mobile-ul">
-    <li>
-      <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline"
-         data-target="home" data-url="/home">Home</a>
-    </li>
-    <li>
-      <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline"
-         data-target="Our-Commitment" data-url="/our-commitment">Commitment</a>
-    </li>
-    <li>
-      <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline"
-         data-target="Our-Specialities" data-url="/our-specialities">Specialities</a>
-    </li>
-    <li>
-      <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline"
-         data-target="Our-Values" data-url="/our-values">Values</a>
-    </li>
-    <li>
-      <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline"
-         data-target="contact-us" data-url="/contact">Contact</a>
-    </li>
-  </ul>
-</div>
-
-    <div class="bg-black container-xxl max-w-[1600px] mx-auto md:px-4 py-1">
-     <!-- Navbar -->
-
-
-
-      <section
-        id="home"
-        class="flex flex-col py-16 md:mt-32 mt-12 md:flex-row items-center justify-between md:px-6 px-4  gap-10"
-      >
-        <!-- Left Content -->
-        <div class="md:w-1/2 space-y-6 text-white">
-          <h1
-            class="text-4xl md:text-6xl xl:text-7xl  font-bold leading-tight opacity-0 transform translate-y-10 transition-all duration-700"
-            id="title-execute"
-          >
-            Where others hesitate,<br />we execute.
-          </h1>
-          <p
-            class="text-lg xl:text-xl text-gray-200 lg:w-[90%] opacity-0 transform translate-y-10 transition-all duration-700 delay-300"
-            id="paragraph-execute"
-          >
-            From human intelligence to executive protection — 360° security
-            scope by elite professionals.
-          </p>
-          <a href="#"
-          
-class="scroll-link"
-
-     data-target="Our-Commitment" data-url="/our-commitment"
-          >
-            <button
-              class="text-white mt-2 px-6 py-3 hover:bg-gray-900 border cursor-pointer opacity-0 transform translate-y-10 transition-all delay-100"
-              id="button-execute"
-            >
-              Learn More
-            </button>
-          </a>
-        </div>
-
-        <!-- Right Content (World Map remains unchanged) -->
-
-        <div class="relative md:w-1/2 w-full">
-          <img
-            src="./assets/images/world-map.png"
-            alt="World Map"
-            class="w-[100%]"
-          />
-          <div class="dot top-[33%] left-[48%]" style="--delay: 0s" onclick="toggleTooltip(this)" role="button" tabindex="0">
-            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Paris</div>
-          </div>
-          <div class="dot top-[75%] left-[33%]" style="--delay: 0s onclick="toggleTooltip(this)" role="button" tabindex="0"">
-            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">
-              Rio de Janeiro
-            </div>
-          </div>
-          <div class="dot top-[45%] left-[62%]" style="--delay: 0.3s" onclick="toggleTooltip(this)" role="button" tabindex="0">
-            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Dubai</div>
-          </div>
-          <div class="dot top-[40%] left-[55%]" style="--delay: 0.6s" onclick="toggleTooltip(this)" role="button" tabindex="0">
-            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Tel Aviv</div>
-          </div>
-          <div class="dot top-[28%] left-[45%]" style="--delay: 0.9s"  onclick="toggleTooltip(this)" role="button" tabindex="0">
-            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">London</div>
-          </div>
-          <div class="dot top-[30%] left-[51%]" style="--delay: 0.3s" onclick="toggleTooltip(this)" role="button" tabindex="0">
-            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Berlin</div>
-          </div>
-          <div class="dot top-[47%] left-[25%]" style="--delay: 0.6s" onclick="toggleTooltip(this)" role="button" tabindex="0">
-            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Miami</div>
-          </div>
-          <div class="dot top-[36%] left-[28%]" style="--delay: 0.6s" onclick="toggleTooltip(this)" role="button" tabindex="0">
-            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">New York</div>
-          </div>
-         
-          <div class="dot top-[30%] left-[57%]" style="--delay: 0.6s" onclick="toggleTooltip(this)" role="button" tabindex="0">
-            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">
-              Moscow
-            </div>
-          </div>
-          <div class="dot top-[42%] left-[16%]" style="--delay: 0.9s" onclick="toggleTooltip(this)" role="button" tabindex="0">
-            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">
-              Las Vegas
-            </div>
-          </div>
-
-          <div class="dot top-[53%] left-[23%]" style="--delay: 0.3" onclick="toggleTooltip(this)" role="button" tabindex="0">
-            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Cancun</div>
-          </div>
-          <div class="dot top-[60%] left-[75%]" style="--delay: 0.6s" onclick="toggleTooltip(this)" role="button" tabindex="0">
-            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">
-              Singapore
-            </div>
-          </div>
-
-          <div class="dot top-[75%] left-[87%]" style="--delay: 0.6s" onclick="toggleTooltip(this)" role="button" tabindex="0">
-            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Sydney</div>
-          </div>
-
-
-  <div class="dot top-[40%] left-[85%]" style="--delay: 0.6s" onclick="toggleTooltip(this)" role="button" tabindex="0">
-            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Tokyo</div>
-          </div>
-
-          <div class="dot top-[37%] left-[52%]" style="--delay: 0.9" onclick="toggleTooltip(this)" role="button" tabindex="0">
-            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Mykonos</div>
-          </div>
-
-          <div class="dot top-[76%] left-[51%]" style="--delay: 0.9" onclick="toggleTooltip(this)" role="button" tabindex="0">
-            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">
-              Cape town
-            </div>
-          </div>
-<div class="dot top-[55%] left-[48%]" style="--delay: 0.9" onclick="toggleTooltip(this)" role="button" tabindex="0">
-            <div class="tooltip -top-6 left-1/2 -translate-x-1/2">
-            Lagos
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <section
-        id="Our-Commitment"
-        class="text-white md:mt-10 lg:mt-10 xl:mt-24 md:px-6 px-4 pb-12"
-      >
-        <div class="flex flex-col gap-8">
-          <h1
-            class="before:absolute text-center xl:mt-44 pt-8 before:top-0 before:left-0 before:w-full before:h-px before:bg-gray-500   text-4xl md:text-[3.6rem] font-bold leading-tight opacity-0 transform translate-y-10 transition-all duration-700"
-            id="title"
-          >
-            Our Commitment
-          </h1>
-          <h3
-            class="text-2xl opacity-0 transform text-center mx-auto md:w-[55%] translate-y-10 transition-all duration-700 delay-300"
-            id="subtitle"
-          >
-            We are a private security and intelligence firm built on years of
-            classified government experience.
-          </h3>
-          <p
-            class="text-lg mx-auto text-center  text-gray-200 opacity-0 transform translate-y-10 transition-all duration-700 delay-500"
-            id="paragraph"
-          >
-            We specialize in human intelligence, real-time crisis response, risk
-            assessment, and executive protection — operating globally with
-            absolute discretion and military precision. Our team has safeguarded
-            heads of state, sensitive operations, and critical infrastructure
-            under the most demanding conditions. Now, that same elite capability
-            is available to protect your mission.
-          </p>
-        </div>
-      </section>
-
-      <section id="Our-Specialities" class="text-white lg:mt-20 mt-10 pb-10 md:px-6 px-4">
-        <h1
-          id="title-specialities"
-          class=" before:absolute pt-8 before:top-0 before:left-0 before:w-full before:h-px before:bg-gray-500 mx-auto text-center text-4xl md:text-[3.6rem] font-bold opacity-0 translate-y-10"
-        >
-          Our Specialities
-        </h1>
-
-        <div
-          class="flex flex-col md:flex-row items-start justify-between  lg:mt-16 mt-8 gap-10 fade-move-up"
-        >
-          <div class="relative md:w-1/2 w-full">
-            <img
-              id="image-1"
-              src="./assets/images/executive_protection.png"
-              alt="World Map"
-              class="rounded opacity-0 translate-y-10"
-            />
-          </div>
-          <div class="md:w-1/2 space-y-6 text-white border md:p-10 p-6 border-[#4d4d4d] rounded-sm">
-            <h2
-              id="title-1"
-              class="text-3xl md:text-4xl font-bold leading-tight opacity-0 translate-y-10"
-            >
-              Executive Protection
-            </h2>
-            <p
-              id="paragraph-1"
-              class="text-lg text-gray-200 opacity-0 translate-y-10"
-            >
-              Tailored security for high-risk individuals in any environment.
-              Our protection units operate with precision and discretion.
-            </p>
-            <p
-              id="specialities-span"
-              class="text-2xl font-bold font-mono opacity-0 translate-y-10"
-            >
-              "Protection you don’t see. Until it matters."
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="flex flex-col-reverse md:flex-row items-start justify-between  lg:mt-24 mt-8 gap-10 fade-move-up"
-        >
-          <div class="md:w-1/2 space-y-6 text-white border md:p-10 p-6 border-[#4d4d4d] rounded-sm">
-            <h2
-              id="title-1"
-              class="text-3xl md:text-4xl font-bold leading-tight opacity-0 translate-y-10"
-            >
-              Creative Intelligence
-            </h2>
-            <p
-              id="paragraph-1"
-              class="text-lg text-gray-200 opacity-0 translate-y-10"
-            >
-              We integrate advanced technological intelligence with expert
-              human-sourced insights to deliver a complete, real-time
-              understanding of evolving threats. Our operatives combine deep
-              field experience and trusted networks with cutting-edge data
-              analytics, signal interception, and cyber tools to uncover
-              critical information, support strategic decisions, and proactively
-              neutralize risks before they materialize.
-            </p>
-            <p
-              id="specialities-span"
-              class="text-2xl font-bold font-mono opacity-0 translate-y-10"
-            >
-              "Trusted intelligence. Covert capabilities. Strategic advantage."
-            </p>
-          </div>
-
-          <div class="relative md:w-1/2 w-full">
-            <img
-              id="image-1"
-              src="./assets/images/creative_intelligence.png"
-              alt="World Map"
-              class="rounded opacity-0 translate-y-10"
-            />
-          </div>
-        </div>
-
-        <div
-          class="flex flex-col md:flex-row items-start justify-between  lg:mt-24 mt-8 gap-10 fade-move-up"
-        >
-          <div class="relative md:w-1/2 w-full">
-            <img
-              id="image-1"
-              src="./assets/images/risk_assessment.png"
-              alt="World Map"
-              class="rounded opacity-0 translate-y-10"
-            />
-          </div>
-          <div class="md:w-1/2 space-y-6 text-white border md:p-10 p-6 border-[#4d4d4d] rounded-sm">
-            <h2
-              id="title-1"
-              class="text-3xl md:text-4xl font-bold leading-tight opacity-0 translate-y-10"
-            >
-              Risk Assessment
-            </h2>
-            <p
-              id="paragraph-1"
-              class="text-lg text-gray-200 opacity-0 translate-y-10"
-            >
-              We deliver precise, actionable assessments of threats to
-              individuals, operations, and assets. Our process integrates
-              geopolitical analysis, behavioral profiling, and environmental
-              surveillance to map vulnerabilities and enable informed planning .
-            </p>
-            <p
-              id="specialities-span"
-              class="text-2xl font-bold font-mono opacity-0 translate-y-10"
-            >
-              "Know the risk. Control the outcome"
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="flex flex-col-reverse md:flex-row items-start justify-between  lg:mt-24 mt-8 gap-10 fade-move-up"
-        >
-          <div class="md:w-1/2 space-y-6 text-white border md:p-10 p-6 border-[#4d4d4d] rounded-sm">
-            <h2
-              id="title-1"
-              class="text-3xl md:text-4xl font-bold leading-tight opacity-0 translate-y-10"
-            >
-              Real-Time Crisis Response
-            </h2>
-            <p
-              id="paragraph-1"
-              class="text-lg text-gray-200 opacity-0 translate-y-10"
-            >
-              When the unexpected strikes, we mobilize immediately. From
-              high-stakes incidents to covert extraction, our teams are trained
-              to neutralize threats, stabilize situations, and restore control
-              under extreme pressure.
-            </p>
-            <p
-              id="specialities-span"
-              class="text-2xl font-bold font-mono opacity-0 translate-y-10"
-            >
-              "Fast decisions. Immediate action. Complete discretion."
-            </p>
-          </div>
-
-          <div class="relative md:w-1/2 w-full">
-            <img
-              id="image-1"
-              src="./assets/images/rescue-operation.png"
-              alt="World Map"
-              class="rounded opacity-0 translate-y-10"
-            />
-          </div>
-        </div>
-      </section>
-      <section id="Our-Values" class="lg:mt-16 md:mt-12 mt-4 py-8 mb-5 md:px-6 px-4">
-        <h1
-          class=" before:absolute text-center pt-8 before:top-0 before:left-0 before:w-full before:h-px before:bg-gray-500  text-white px-4 text-4xl md:text-[3.6rem] font-bold leading-tight opacity-0 transform translate-y-10 transition-all duration-700"
-        >
-          Our Values
-        </h1>
-
-        <!-- Row 1: Left to Right (actually left scroll) -->
-        <div class="overflow-hidden whitespace-nowrap mt-10">
-          <div class="scroll-left flex w-max">
-            <ul class="flex gap-10 text-lg font-semibold text-white">
-              <li>Discipline</li>
-              <li>Discretion</li>
-              <li>Loyalty</li>
-              <li>Decisiveness</li>
-              <li>Adaptability</li>
-              <li>Trust</li>
-              <li>Professionalism</li>
-              <li>Accountability</li>
-              <li>Operational Excellence</li>
-              <li>Legal & Ethical Integrity</li>
-             
-              <li></li>
-            </ul>
-            <ul class="flex gap-10 text-lg font-semibold text-white">
-              <li>Discipline</li>
-              <li>Discretion</li>
-              <li>Loyalty</li>
-              <li>Decisiveness</li>
-              <li>Adaptability</li>
-              <li>Trust</li>
-              <li>Professionalism</li>
-              <li>Accountability</li>
-              <li>Operational Excellence</li>
-
-              <li>Legal & Ethical Integrity</li>
-              
-            </ul>
-          </div>
-        </div>
-        <!-- Row 2: Right to Left (actually right scroll) -->
-        <div class="overflow-hidden whitespace-nowrap mt-6">
-          <div class="scroll-right flex w-max">
-            <ul class="flex gap-10 text-lg font-semibold text-white">
-              <li>Discipline</li>
-              <li>Discretion</li>
-              <li>Loyalty</li>
-              <li>Decisiveness</li>
-              <li>Adaptability</li>
-              <li>Trust</li>
-              <li>Professionalism</li>
-              <li>Accountability</li>
-              <li>Operational Excellence</li>
-
-              <li>Legal & Ethical Integrity</li>
-             
-              <li></li>
-            </ul>
-            <ul class="flex gap-10 text-lg font-semibold text-white">
-              <li>Discipline</li>
-              <li>Discretion</li>
-              <li>Loyalty</li>
-              <li>Decisiveness</li>
-              <li>Adaptability</li>
-              <li>Trust</li>
-              <li>Professionalism</li>
-              <li>Accountability</li>
-              <li>Operational Excellence</li>
-              <li>Legal & Ethical Integrity</li>
-              
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section id="contact-us" class="lg:mt-16 md:mt-12 mt-4 py-8 mb-5 md:px-6">
-        <h1
-          class=" before:absolute pt-8 before:top-0 before:left-0 before:w-full before:h-px before:bg-gray-500 text-white mx-auto text-center text-4xl md:text-[3.6rem] font-bold leading-tight opacity-0 transform translate-y-10 transition-all duration-700"
-        >
-          Reach Out. Anytime. Anywhere.
-        </h1>
-
-        <div
-          class="text-white flex flex-col gap-2 items-center justify-between mt-10"
-        >
-         
-<div class="flex items-center sm:flex-row flex-col gap-4">
-          <a
-            href="https://wa.me/972533550054"
-            target="_blank"
-            class="text-white whatsapp rounded-lg flex items-center gap-2 md:text-[1.3rem] sm:text-[1.1rem] text-[1rem] font-semibold"
-          >
-            <i class="fab fa-whatsapp text-text-[1.1rem]"></i> +972 53-355-0054
-          </a>
-<span class="sm:flex hidden">|</span>
-          <p
-            class="md:text-[1.3rem] sm:text-[1.1rem] text-[1rem] font-semibold opacity-0 transform translate-y-10 transition-all duration-700"
-          >
-            desk@shinobiforce.com
-          </p>
-
-
-</div>
-
-
- <p
-            class="glow md:text-xl mt-8 py-4 font-bold text-center opacity-0 transform translate-y-10 transition-all duration-700"
-          >
-          ALL INQUIRIES HANDLED IN FULL CONFIDENTIALITY.
-          </p>
-
-        </div>
-      </section>
-
-      <footer class="mx-auto text-center text-white mb-5 mt-[-2rem]">
-        <p>Copyright © 2025 Shinobi Force Ltd.</p>
-        <a href="#home" class="scroll-link"
-        data-target="home"
-     data-url="/home">
-          <img
-            src="./assets/images/logo.png"
-            alt="logo"
-            class="w-32 mx-auto mt-2"
-          />
-        </a>
-      </footer>
+  <!-- Mobile Menu -->
+  <div id="mobileMenu"
+    class="fixed z-50 bg-black top-0 left-0 w-full h-screen flex-col items-center opacity-0 scale-95 hidden transition-all duration-500 ease-in-out">
+    <!-- Header -->
+    <div class="w-full flex justify-between items-center px-3 py-3 border-b">
+      <span class="flex items-center gap-4 text-2xl font-bold text-white">
+        <img src="./assets/images/logo.png" alt="logo" class="w-24" />
+      </span>
+      <!-- Close Icon -->
+      <span class="text-white text-3xl cursor-pointer close-span">
+        <i class="fa-solid fa-xmark"></i>
+      </span>
     </div>
 
-    <!-- jQuery (For Menu Toggle) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Mobile Links -->
+    <ul class="flex flex-col items-center gap-6 mt-8 text-white font-semibold text-[1.2rem]" id="mobile-ul">
+      <li>
+        <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline" data-target="home"
+          data-url="/home">Home</a>
+      </li>
+      <li>
+        <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline" data-target="Our-Commitment"
+          data-url="/our-commitment">Commitment</a>
+      </li>
+      <li>
+        <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline" data-target="Our-Specialities"
+          data-url="/our-specialities">Specialities</a>
+      </li>
+      <li>
+        <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline" data-target="Our-Values"
+          data-url="/our-values">Values</a>
+      </li>
+      <li>
+        <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline" data-target="contact-us"
+          data-url="/contact">Contact</a>
+      </li>
+    </ul>
+  </div>
 
-    <script>
-      $(document).ready(function () {
-        // Open menu
-        $(".burger-span").click(function () {
+  <div class="bg-black container-xxl max-w-[1600px] mx-auto md:px-4 py-1">
+    <!-- Navbar -->
+
+
+
+    <section id="home"
+      class="flex flex-col py-16 md:mt-32 mt-12 md:flex-row items-center justify-between md:px-6 px-4  gap-10">
+      <!-- Left Content -->
+      <div class="md:w-1/2 space-y-6 text-white">
+        <h1
+          class="text-4xl md:text-6xl xl:text-7xl  font-bold leading-tight opacity-0 transform translate-y-10 transition-all duration-700"
+          id="title-execute">
+          Where others hesitate,<br />we execute.
+        </h1>
+        <p class="text-lg xl:text-xl text-gray-200 lg:w-[90%] opacity-0 transform translate-y-10 transition-all duration-700 delay-300"
+          id="paragraph-execute">
+          From human intelligence to executive protection — 360° security
+          scope by elite professionals.
+        </p>
+        <a href="#" class="scroll-link" data-target="Our-Commitment" data-url="/our-commitment">
+          <button
+            class="text-white mt-2 px-6 py-3 hover:bg-gray-900 border cursor-pointer opacity-0 transform translate-y-10 transition-all delay-100"
+            id="button-execute">
+            Learn More
+          </button>
+        </a>
+      </div>
+
+      <!-- Right Content (World Map remains unchanged) -->
+
+      <div class="relative md:w-1/2 w-full">
+        <img src="./assets/images/world-map.png" alt="World Map" class="w-[100%]" />
+        <div class="dot top-[33%] left-[48%]" style="--delay: 0s" onclick="toggleTooltip(this)" role="button"
+          tabindex="0">
+          <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Paris</div>
+        </div>
+        <div class="dot top-[75%] left-[33%]" style="--delay: 0s onclick=" toggleTooltip(this)" role="button"
+          tabindex="0"">
+            <div class=" tooltip -top-6 left-1/2 -translate-x-1/2">
+          Rio de Janeiro
+        </div>
+      </div>
+      <div class="dot top-[45%] left-[62%]" style="--delay: 0.3s" onclick="toggleTooltip(this)" role="button"
+        tabindex="0">
+        <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Dubai</div>
+      </div>
+      <div class="dot top-[40%] left-[55%]" style="--delay: 0.6s" onclick="toggleTooltip(this)" role="button"
+        tabindex="0">
+        <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Tel Aviv</div>
+      </div>
+      <div class="dot top-[28%] left-[45%]" style="--delay: 0.9s" onclick="toggleTooltip(this)" role="button"
+        tabindex="0">
+        <div class="tooltip -top-6 left-1/2 -translate-x-1/2">London</div>
+      </div>
+      <div class="dot top-[30%] left-[51%]" style="--delay: 0.3s" onclick="toggleTooltip(this)" role="button"
+        tabindex="0">
+        <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Berlin</div>
+      </div>
+      <div class="dot top-[47%] left-[25%]" style="--delay: 0.6s" onclick="toggleTooltip(this)" role="button"
+        tabindex="0">
+        <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Miami</div>
+      </div>
+      <div class="dot top-[36%] left-[28%]" style="--delay: 0.6s" onclick="toggleTooltip(this)" role="button"
+        tabindex="0">
+        <div class="tooltip -top-6 left-1/2 -translate-x-1/2">New York</div>
+      </div>
+
+      <div class="dot top-[30%] left-[57%]" style="--delay: 0.6s" onclick="toggleTooltip(this)" role="button"
+        tabindex="0">
+        <div class="tooltip -top-6 left-1/2 -translate-x-1/2">
+          Moscow
+        </div>
+      </div>
+      <div class="dot top-[42%] left-[16%]" style="--delay: 0.9s" onclick="toggleTooltip(this)" role="button"
+        tabindex="0">
+        <div class="tooltip -top-6 left-1/2 -translate-x-1/2">
+          Las Vegas
+        </div>
+      </div>
+
+      <div class="dot top-[53%] left-[23%]" style="--delay: 0.3" onclick="toggleTooltip(this)" role="button"
+        tabindex="0">
+        <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Cancun</div>
+      </div>
+      <div class="dot top-[60%] left-[75%]" style="--delay: 0.6s" onclick="toggleTooltip(this)" role="button"
+        tabindex="0">
+        <div class="tooltip -top-6 left-1/2 -translate-x-1/2">
+          Singapore
+        </div>
+      </div>
+
+      <div class="dot top-[75%] left-[87%]" style="--delay: 0.6s" onclick="toggleTooltip(this)" role="button"
+        tabindex="0">
+        <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Sydney</div>
+      </div>
+
+
+      <div class="dot top-[40%] left-[85%]" style="--delay: 0.6s" onclick="toggleTooltip(this)" role="button"
+        tabindex="0">
+        <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Tokyo</div>
+      </div>
+
+      <div class="dot top-[37%] left-[52%]" style="--delay: 0.9" onclick="toggleTooltip(this)" role="button"
+        tabindex="0">
+        <div class="tooltip -top-6 left-1/2 -translate-x-1/2">Mykonos</div>
+      </div>
+
+      <div class="dot top-[76%] left-[51%]" style="--delay: 0.9" onclick="toggleTooltip(this)" role="button"
+        tabindex="0">
+        <div class="tooltip -top-6 left-1/2 -translate-x-1/2">
+          Cape town
+        </div>
+      </div>
+      <div class="dot top-[55%] left-[48%]" style="--delay: 0.9" onclick="toggleTooltip(this)" role="button"
+        tabindex="0">
+        <div class="tooltip -top-6 left-1/2 -translate-x-1/2">
+          Lagos
+        </div>
+      </div>
+
+  </div>
+  </section>
+
+  <section id="Our-Commitment" class="text-white md:mt-10 lg:mt-10 xl:mt-24 md:px-6 px-4 pb-12">
+    <div class="flex flex-col gap-8">
+      <h1
+        class="before:absolute text-center xl:mt-44 pt-8 before:top-0 before:left-0 before:w-full before:h-px before:bg-gray-500   text-4xl md:text-[3.6rem] font-bold leading-tight opacity-0 transform translate-y-10 transition-all duration-700"
+        id="title">
+        Our Commitment
+      </h1>
+      <h3
+        class="text-2xl opacity-0 transform text-center mx-auto md:w-[55%] translate-y-10 transition-all duration-700 delay-300"
+        id="subtitle">
+        We are a private security and intelligence firm built on years of
+        classified government experience.
+      </h3>
+      <p class="text-lg mx-auto text-center  text-gray-200 opacity-0 transform translate-y-10 transition-all duration-700 delay-500"
+        id="paragraph">
+        We specialize in human intelligence, real-time crisis response, risk
+        assessment, and executive protection — operating globally with
+        absolute discretion and military precision. Our team has safeguarded
+        heads of state, sensitive operations, and critical infrastructure
+        under the most demanding conditions. Now, that same elite capability
+        is available to protect your mission.
+      </p>
+    </div>
+  </section>
+
+  <section id="Our-Specialities" class="text-white lg:mt-20 mt-10 pb-10 md:px-6 px-4">
+    <h1 id="title-specialities"
+      class=" before:absolute pt-8 before:top-0 before:left-0 before:w-full before:h-px before:bg-gray-500 mx-auto text-center text-4xl md:text-[3.6rem] font-bold opacity-0 translate-y-10">
+      Our Specialities
+    </h1>
+
+    <div class="flex flex-col md:flex-row items-start justify-between  lg:mt-16 mt-8 gap-10 fade-move-up">
+      <div class="relative md:w-1/2 w-full">
+        <img id="image-1" src="./assets/images/executive_protection.png" alt="World Map"
+          class="rounded opacity-0 translate-y-10" />
+      </div>
+      <div class="md:w-1/2 space-y-6 text-white border md:p-10 p-6 border-[#4d4d4d] rounded-sm">
+        <h2 id="title-1" class="text-3xl md:text-4xl font-bold leading-tight opacity-0 translate-y-10">
+          Executive Protection
+        </h2>
+        <p id="paragraph-1" class="text-lg text-gray-200 opacity-0 translate-y-10">
+          Tailored security for high-risk individuals in any environment.
+          Our protection units operate with precision and discretion.
+        </p>
+        <p id="specialities-span" class="text-2xl font-bold font-mono opacity-0 translate-y-10">
+          "Protection you don’t see. Until it matters."
+        </p>
+      </div>
+    </div>
+
+    <div class="flex flex-col-reverse md:flex-row items-start justify-between  lg:mt-24 mt-8 gap-10 fade-move-up">
+      <div class="md:w-1/2 space-y-6 text-white border md:p-10 p-6 border-[#4d4d4d] rounded-sm">
+        <h2 id="title-1" class="text-3xl md:text-4xl font-bold leading-tight opacity-0 translate-y-10">
+          Creative Intelligence
+        </h2>
+        <p id="paragraph-1" class="text-lg text-gray-200 opacity-0 translate-y-10">
+          We integrate advanced technological intelligence with expert
+          human-sourced insights to deliver a complete, real-time
+          understanding of evolving threats. Our operatives combine deep
+          field experience and trusted networks with cutting-edge data
+          analytics, signal interception, and cyber tools to uncover
+          critical information, support strategic decisions, and proactively
+          neutralize risks before they materialize.
+        </p>
+        <p id="specialities-span" class="text-2xl font-bold font-mono opacity-0 translate-y-10">
+          "Trusted intelligence. Covert capabilities. Strategic advantage."
+        </p>
+      </div>
+
+      <div class="relative md:w-1/2 w-full">
+        <img id="image-1" src="./assets/images/creative_intelligence.png" alt="World Map"
+          class="rounded opacity-0 translate-y-10" />
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row items-start justify-between  lg:mt-24 mt-8 gap-10 fade-move-up">
+      <div class="relative md:w-1/2 w-full">
+        <img id="image-1" src="./assets/images/risk_assessment.png" alt="World Map"
+          class="rounded opacity-0 translate-y-10" />
+      </div>
+      <div class="md:w-1/2 space-y-6 text-white border md:p-10 p-6 border-[#4d4d4d] rounded-sm">
+        <h2 id="title-1" class="text-3xl md:text-4xl font-bold leading-tight opacity-0 translate-y-10">
+          Risk Assessment
+        </h2>
+        <p id="paragraph-1" class="text-lg text-gray-200 opacity-0 translate-y-10">
+          We deliver precise, actionable assessments of threats to
+          individuals, operations, and assets. Our process integrates
+          geopolitical analysis, behavioral profiling, and environmental
+          surveillance to map vulnerabilities and enable informed planning .
+        </p>
+        <p id="specialities-span" class="text-2xl font-bold font-mono opacity-0 translate-y-10">
+          "Know the risk. Control the outcome"
+        </p>
+      </div>
+    </div>
+
+    <div class="flex flex-col-reverse md:flex-row items-start justify-between  lg:mt-24 mt-8 gap-10 fade-move-up">
+      <div class="md:w-1/2 space-y-6 text-white border md:p-10 p-6 border-[#4d4d4d] rounded-sm">
+        <h2 id="title-1" class="text-3xl md:text-4xl font-bold leading-tight opacity-0 translate-y-10">
+          Real-Time Crisis Response
+        </h2>
+        <p id="paragraph-1" class="text-lg text-gray-200 opacity-0 translate-y-10">
+          When the unexpected strikes, we mobilize immediately. From
+          high-stakes incidents to covert extraction, our teams are trained
+          to neutralize threats, stabilize situations, and restore control
+          under extreme pressure.
+        </p>
+        <p id="specialities-span" class="text-2xl font-bold font-mono opacity-0 translate-y-10">
+          "Fast decisions. Immediate action. Complete discretion."
+        </p>
+      </div>
+
+      <div class="relative md:w-1/2 w-full">
+        <img id="image-1" src="./assets/images/rescue-operation.png" alt="World Map"
+          class="rounded opacity-0 translate-y-10" />
+      </div>
+    </div>
+  </section>
+  <section id="Our-Values" class="lg:mt-16 md:mt-12 mt-4 py-8 mb-5 md:px-6 px-4">
+    <h1
+      class=" before:absolute text-center pt-8 before:top-0 before:left-0 before:w-full before:h-px before:bg-gray-500  text-white px-4 text-4xl md:text-[3.6rem] font-bold leading-tight opacity-0 transform translate-y-10 transition-all duration-700">
+      Our Values
+    </h1>
+
+    <!-- Row 1: Left to Right (actually left scroll) -->
+    <div class="overflow-hidden whitespace-nowrap mt-10">
+      <div class="scroll-left flex w-max">
+        <ul class="flex gap-10 text-lg font-semibold text-white">
+          <li>Discipline</li>
+          <li>Discretion</li>
+          <li>Loyalty</li>
+          <li>Decisiveness</li>
+          <li>Adaptability</li>
+          <li>Trust</li>
+          <li>Professionalism</li>
+          <li>Accountability</li>
+          <li>Operational Excellence</li>
+          <li>Legal & Ethical Integrity</li>
+
+          <li></li>
+        </ul>
+        <ul class="flex gap-10 text-lg font-semibold text-white">
+          <li>Discipline</li>
+          <li>Discretion</li>
+          <li>Loyalty</li>
+          <li>Decisiveness</li>
+          <li>Adaptability</li>
+          <li>Trust</li>
+          <li>Professionalism</li>
+          <li>Accountability</li>
+          <li>Operational Excellence</li>
+
+          <li>Legal & Ethical Integrity</li>
+
+        </ul>
+      </div>
+    </div>
+    <!-- Row 2: Right to Left (actually right scroll) -->
+    <div class="overflow-hidden whitespace-nowrap mt-6">
+      <div class="scroll-right flex w-max">
+        <ul class="flex gap-10 text-lg font-semibold text-white">
+          <li>Discipline</li>
+          <li>Discretion</li>
+          <li>Loyalty</li>
+          <li>Decisiveness</li>
+          <li>Adaptability</li>
+          <li>Trust</li>
+          <li>Professionalism</li>
+          <li>Accountability</li>
+          <li>Operational Excellence</li>
+
+          <li>Legal & Ethical Integrity</li>
+
+          <li></li>
+        </ul>
+        <ul class="flex gap-10 text-lg font-semibold text-white">
+          <li>Discipline</li>
+          <li>Discretion</li>
+          <li>Loyalty</li>
+          <li>Decisiveness</li>
+          <li>Adaptability</li>
+          <li>Trust</li>
+          <li>Professionalism</li>
+          <li>Accountability</li>
+          <li>Operational Excellence</li>
+          <li>Legal & Ethical Integrity</li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="contact-us" class="lg:mt-16 md:mt-12 mt-4 py-8 mb-5 md:px-6">
+    <h1
+      class=" before:absolute pt-8 before:top-0 before:left-0 before:w-full before:h-px before:bg-gray-500 text-white mx-auto text-center text-4xl md:text-[3.6rem] font-bold leading-tight opacity-0 transform translate-y-10 transition-all duration-700">
+      Reach Out. Anytime. Anywhere.
+    </h1>
+
+    <div class="text-white flex flex-col gap-2 items-center justify-between mt-10">
+
+      <div class="flex items-center sm:flex-row flex-col gap-4">
+        <a href="https://wa.me/972533550054" target="_blank"
+          class="text-white whatsapp rounded-lg flex items-center gap-2 md:text-[1.3rem] sm:text-[1.1rem] text-[1rem] font-semibold">
+          <i class="fab fa-whatsapp text-text-[1.1rem]"></i> +972 53-355-0054
+        </a>
+        <span class="sm:flex hidden">|</span>
+        <p
+          class="md:text-[1.3rem] sm:text-[1.1rem] text-[1rem] font-semibold opacity-0 transform translate-y-10 transition-all duration-700">
+          desk@shinobiforce.com
+        </p>
+
+
+      </div>
+
+
+      <p
+        class="glow md:text-xl mt-8 py-4 font-bold text-center opacity-0 transform translate-y-10 transition-all duration-700">
+        ALL INQUIRIES HANDLED IN FULL CONFIDENTIALITY.
+      </p>
+
+    </div>
+  </section>
+
+  <footer class="mx-auto text-center text-white mb-5 mt-[-2rem]">
+    <p>Copyright © 2025 Shinobi Force Ltd.</p>
+    <a href="#home" class="scroll-link" data-target="home" data-url="/home">
+      <img src="./assets/images/logo.png" alt="logo" class="w-32 mx-auto mt-2" />
+    </a>
+  </footer>
+  </div>
+
+  <!-- jQuery (For Menu Toggle) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      // Open menu
+      $(".burger-span").click(function () {
+        $("#mobileMenu")
+          .removeClass("hidden opacity-0 scale-95")
+          .addClass("opacity-100 scale-100")
+          .css("transform", "translateY(0%)");
+
+        $(".burger-span").addClass("hidden");
+      });
+
+      // Function to close menu
+      function closeMobileMenu() {
+        $("#mobileMenu")
+          .css("transform", "translateY(-100%)")
+          .removeClass("opacity-100 scale-100")
+          .addClass("opacity-0 scale-95");
+
+        setTimeout(() => {
+          $("#mobileMenu").addClass("hidden");
+          $(".burger-span").removeClass("hidden");
+        }, 500);
+      }
+
+      // Close icon click
+      $(".close-span").click(function () {
+        closeMobileMenu();
+      });
+
+      // Link click (inside mobile menu)
+      $("#mobile-ul a").click(function () {
+        closeMobileMenu();
+      });
+
+      // Handle resizing (close menu if going to desktop)
+      $(window).resize(function () {
+        if ($(window).width() >= 768) {
           $("#mobileMenu")
-            .removeClass("hidden opacity-0 scale-95")
-            .addClass("opacity-100 scale-100")
-            .css("transform", "translateY(0%)");
-
-          $(".burger-span").addClass("hidden");
-        });
-
-        // Function to close menu
-        function closeMobileMenu() {
-          $("#mobileMenu")
-            .css("transform", "translateY(-100%)")
-            .removeClass("opacity-100 scale-100")
-            .addClass("opacity-0 scale-95");
-
-          setTimeout(() => {
-            $("#mobileMenu").addClass("hidden");
-            $(".burger-span").removeClass("hidden");
-          }, 500);
+            .addClass("hidden opacity-0 scale-95")
+            .css("transform", "translateY(-100%)");
+          $(".burger-span").removeClass("hidden");
         }
+      });
+    });
 
-        // Close icon click
-        $(".close-span").click(function () {
-          closeMobileMenu();
-        });
 
-        // Link click (inside mobile menu)
-        $("#mobile-ul a").click(function () {
-          closeMobileMenu();
-        });
+    document.addEventListener("DOMContentLoaded", function () {
+      const observerOptions = { threshold: 0.2 }; // Trigger animation when 20% is visible
 
-        // Handle resizing (close menu if going to desktop)
-        $(window).resize(function () {
-          if ($(window).width() >= 768) {
-            $("#mobileMenu")
-              .addClass("hidden opacity-0 scale-95")
-              .css("transform", "translateY(-100%)");
-            $(".burger-span").removeClass("hidden");
+      // Navbar Animation (Triggers on Page Load)
+      const navbar = document.getElementById("navbar");
+      setTimeout(() => {
+        navbar.classList.remove("opacity-0", "-translate-y-10");
+        navbar.classList.add("opacity-100", "translate-y-0");
+      }, 300);
+
+      const animatedElements = [
+        document.getElementById("title"),
+        document.getElementById("subtitle"),
+        document.getElementById("paragraph"),
+
+        document.getElementById("title-execute"),
+        document.getElementById("paragraph-execute"),
+        document.getElementById("button-execute"),
+      ];
+
+      const specialitiesElements = document.querySelectorAll(
+        "#Our-Specialities .fade-move-up, #Our-Specialities img, #contact-us h1, #contact-us p,  #Our-Specialities h2, #Our-Specialities h1, #Our-Specialities p, #Our-Specialities span, #Our-Values h1"
+      );
+
+      const allElements = [...animatedElements, ...specialitiesElements];
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove("opacity-0", "translate-y-10");
+            entry.target.classList.add(
+              "opacity-100",
+              "translate-y-0",
+              "transition-all",
+              "duration-700",
+              "ease-out"
+            );
           }
         });
+      }, observerOptions);
+
+      // Observe each element
+      allElements.forEach((element) => {
+        if (element) observer.observe(element); // Ensure valid elements are observed
       });
-
-
-  document.addEventListener("DOMContentLoaded", function () {
-        const observerOptions = { threshold: 0.2 }; // Trigger animation when 20% is visible
-
-        // Navbar Animation (Triggers on Page Load)
-        const navbar = document.getElementById("navbar");
-        setTimeout(() => {
-          navbar.classList.remove("opacity-0", "-translate-y-10");
-          navbar.classList.add("opacity-100", "translate-y-0");
-        }, 300);
-
-        const animatedElements = [
-          document.getElementById("title"),
-          document.getElementById("subtitle"),
-          document.getElementById("paragraph"),
-
-          document.getElementById("title-execute"),
-          document.getElementById("paragraph-execute"),
-          document.getElementById("button-execute"),
-        ];
-
-        const specialitiesElements = document.querySelectorAll(
-          "#Our-Specialities .fade-move-up, #Our-Specialities img, #contact-us h1, #contact-us p,  #Our-Specialities h2, #Our-Specialities h1, #Our-Specialities p, #Our-Specialities span, #Our-Values h1"
-        );
-
-        const allElements = [...animatedElements, ...specialitiesElements];
-
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.remove("opacity-0", "translate-y-10");
-              entry.target.classList.add(
-                "opacity-100",
-                "translate-y-0",
-                "transition-all",
-                "duration-700",
-                "ease-out"
-              );
-            }
-          });
-        }, observerOptions);
-
-        // Observe each element
-        allElements.forEach((element) => {
-          if (element) observer.observe(element); // Ensure valid elements are observed
-        });
-      });
-
-
- function toggleTooltip(dot) {
-    const tooltip = dot.querySelector(".tooltip");
-    
-    // Remove tooltip from all others
-    document.querySelectorAll('.tooltip').forEach(el => {
-      if (el !== tooltip) {
-        el.classList.remove("opacity-100", "pointer-events-auto");
-      }
     });
 
-    // Toggle visibility
-    tooltip.classList.toggle("opacity-100");
-    tooltip.classList.toggle("pointer-events-auto");
 
-    // Optional: Auto-hide after 3s
-    setTimeout(() => {
-      tooltip.classList.remove("opacity-100", "pointer-events-auto");
-    }, 3000);
-  }
+    function toggleTooltip(dot) {
+      const tooltip = dot.querySelector(".tooltip");
 
-
-function toggleTooltip(dot) {
-    const tooltip = dot.querySelector(".tooltip");
-
-    document.querySelectorAll(".tooltip").forEach(el => {
-      el.classList.remove("visible");
-    });
-
-    tooltip.classList.add("visible");
-
-    setTimeout(() => {
-      tooltip.classList.remove("visible");
-    }, 3000);
-  }
-
-//js to disable right click
-
-
-  // Get the navbar element
-const navbar = document.getElementById('navbar');
-
-// Get the offset position of the navbar
-const stickyOffset = navbar.offsetTop;
-
-// Function to add or remove the 'sticky' class based on scroll position
-function handleScroll() {
-  if (window.pageYOffset >= stickyOffset) {
-    navbar.classList.add('sticky');
-  } else {
-    navbar.classList.remove('sticky');
-  }
-}
-
-// Event listener for scroll events
-window.addEventListener('scroll', handleScroll);
-//js for urls of the page
-
-
-  // Scroll to section and update URL
-  document.querySelectorAll('.scroll-link').forEach(link => {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
-
-      const targetId = this.getAttribute('data-target');
-      const newUrl = this.getAttribute('data-url');
-      const targetSection = document.getElementById(targetId);
-
-      if (targetSection) {
-        targetSection.scrollIntoView({ behavior: 'smooth' });
-        history.pushState(null, null, newUrl);
-
-        // Close mobile menu if open
-        const mobileMenu = document.getElementById('mobileMenu');
-        if (mobileMenu.classList.contains('flex')) {
-          mobileMenu.classList.add('opacity-0', 'scale-95', 'hidden');
-          mobileMenu.classList.remove('opacity-100', 'scale-100');
+      // Remove tooltip from all others
+      document.querySelectorAll('.tooltip').forEach(el => {
+        if (el !== tooltip) {
+          el.classList.remove("opacity-100", "pointer-events-auto");
         }
+      });
+
+      // Toggle visibility
+      tooltip.classList.toggle("opacity-100");
+      tooltip.classList.toggle("pointer-events-auto");
+
+      // Optional: Auto-hide after 3s
+      setTimeout(() => {
+        tooltip.classList.remove("opacity-100", "pointer-events-auto");
+      }, 3000);
+    }
+
+
+    function toggleTooltip(dot) {
+      const tooltip = dot.querySelector(".tooltip");
+
+      document.querySelectorAll(".tooltip").forEach(el => {
+        el.classList.remove("visible");
+      });
+
+      tooltip.classList.add("visible");
+
+      setTimeout(() => {
+        tooltip.classList.remove("visible");
+      }, 3000);
+    }
+
+    //js to disable right click
+
+
+    // Get the navbar element
+    const navbar = document.getElementById('navbar');
+
+    // Get the offset position of the navbar
+    const stickyOffset = navbar.offsetTop;
+
+    // Function to add or remove the 'sticky' class based on scroll position
+    function handleScroll() {
+      if (window.pageYOffset >= stickyOffset) {
+        navbar.classList.add('sticky');
+      } else {
+        navbar.classList.remove('sticky');
+      }
+    }
+
+    // Event listener for scroll events
+    window.addEventListener('scroll', handleScroll);
+    //js for urls of the page
+
+
+    // Scroll to section and update URL
+    document.querySelectorAll('.scroll-link').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('data-target');
+        const newUrl = this.getAttribute('data-url');
+        const targetSection = document.getElementById(targetId);
+
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+          history.pushState(null, null, newUrl);
+
+          // Close mobile menu if open
+          const mobileMenu = document.getElementById('mobileMenu');
+          if (mobileMenu.classList.contains('flex')) {
+            mobileMenu.classList.add('opacity-0', 'scale-95', 'hidden');
+            mobileMenu.classList.remove('opacity-100', 'scale-100');
+          }
+        }
+      });
+    });
+
+    // Toggle mobile menu
+    const burger = document.querySelector('.burger-span');
+    const close = document.querySelector('.close-span');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    burger.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');
+      mobileMenu.classList.add('flex', 'opacity-100', 'scale-100');
+    });
+
+    close.addEventListener('click', () => {
+      mobileMenu.classList.add('opacity-0', 'scale-95', 'hidden');
+      mobileMenu.classList.remove('opacity-100', 'scale-100');
+    });
+
+
+
+
+    document.addEventListener("contextmenu", function (e) {
+      e.preventDefault();
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (
+        e.key === "F12" ||
+        (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) ||
+        (e.ctrlKey && e.key === "U")
+      ) {
+        e.preventDefault();
       }
     });
-  });
 
-  // Toggle mobile menu
-  const burger = document.querySelector('.burger-span');
-  const close = document.querySelector('.close-span');
-  const mobileMenu = document.getElementById('mobileMenu');
-
-  burger.addEventListener('click', () => {
-    mobileMenu.classList.remove('hidden');
-    mobileMenu.classList.add('flex', 'opacity-100', 'scale-100');
-  });
-
-  close.addEventListener('click', () => {
-    mobileMenu.classList.add('opacity-0', 'scale-95', 'hidden');
-    mobileMenu.classList.remove('opacity-100', 'scale-100');
-  });
+    //js to disable right click
 
 
 
+  </script>
+</body>
 
-
-
-//js to disable right click
-
-
-
-    </script>
-  </body>
 </html>

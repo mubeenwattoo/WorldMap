@@ -102,3 +102,11 @@ body {
   background: hsla(0deg, 75%, 72%, 0.949);
   color: #121212;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 1.1%;
+  width: 98%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}

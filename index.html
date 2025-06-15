@@ -18,8 +18,7 @@
 
   </head>
   <body>
-    <div class="bg-black container-xxl max-w-[1600px] mx-auto md:px-4 py-1">
-     <!-- Navbar -->
+
 <nav
   id="navbar"
   class="py-3 md:px-6 px-4 flex justify-between items-center opacity-0 transform -translate-y-10 transition-all duration-700"
@@ -31,7 +30,7 @@
         data-target="home"
      data-url="/home">
 
-    <img src="./assets/images/logo.jpg" alt="logo" class="md:w-28 w-24" />
+    <img src="./assets/images/logo.png" alt="logo" class="md:w-28 w-24" />
     </a>
   </span>
 
@@ -68,12 +67,12 @@
 <!-- Mobile Menu -->
 <div
   id="mobileMenu"
-  class="fixed z-20 bg-black top-0 left-0 w-full h-screen flex-col items-center opacity-0 scale-95 hidden transition-all duration-500 ease-in-out"
+  class="fixed z-50 bg-black top-0 left-0 w-full h-screen flex-col items-center opacity-0 scale-95 hidden transition-all duration-500 ease-in-out"
 >
   <!-- Header -->
   <div class="w-full flex justify-between items-center px-3 py-3 border-b">
     <span class="flex items-center gap-4 text-2xl font-bold text-white">
-         <img src="./assets/images/logo.jpg" alt="logo" class="w-24" />
+         <img src="./assets/images/logo.png" alt="logo" class="w-24" />
     </span>
     <!-- Close Icon -->
     <span class="text-white text-3xl cursor-pointer close-span">
@@ -106,10 +105,14 @@
   </ul>
 </div>
 
+    <div class="bg-black container-xxl max-w-[1600px] mx-auto md:px-4 py-1">
+     <!-- Navbar -->
+
+
 
       <section
         id="home"
-        class="flex flex-col py-16 xl:mt-10 md:flex-row items-center justify-between md:px-6 px-4 mt-4 gap-10"
+        class="flex flex-col py-16 md:mt-32 mt-12 md:flex-row items-center justify-between md:px-6 px-4  gap-10"
       >
         <!-- Left Content -->
         <div class="md:w-1/2 space-y-6 text-white">
@@ -529,7 +532,7 @@ class="scroll-link"
         data-target="home"
      data-url="/home">
           <img
-            src="./assets/images/logo.jpg"
+            src="./assets/images/logo.png"
             alt="logo"
             class="w-32 mx-auto mt-2"
           />
@@ -693,12 +696,6 @@ window.addEventListener('scroll', handleScroll);
 //js for urls of the page
 
 
-
-
-
-
-
-
   // Scroll to section and update URL
   document.querySelectorAll('.scroll-link').forEach(link => {
     link.addEventListener('click', function (e) {
@@ -744,19 +741,7 @@ window.addEventListener('scroll', handleScroll);
 
 //js to disable right click
 
- document.addEventListener("contextmenu", function (e) {
-    e.preventDefault();
-  });
 
-  document.addEventListener("keydown", function (e) {
-    if (
-      e.key === "F12" ||
-      (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) ||
-      (e.ctrlKey && e.key === "U")
-    ) {
-      e.preventDefault();
-    }
-  });
 
     </script>
   </body>

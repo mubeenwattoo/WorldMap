@@ -326,6 +326,9 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
+  .mt-\[-2rem\] {
+    margin-top: -2rem;
+  }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
   }
@@ -922,6 +925,10 @@ body {
 }
 .glow {
   text-shadow: 0 0 8px white, 0 0 36px white, 0 0 20px white;
+}
+::selection {
+  background: hsla(0deg, 75%, 72%, 0.949);
+  color: #121212;
 }
 @property --tw-translate-x {
   syntax: "*";

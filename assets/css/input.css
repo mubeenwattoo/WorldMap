@@ -97,3 +97,8 @@ body {
 .glow {
   text-shadow: 0 0 8px white, 0 0 36px white, 0 0 20px white;
 }
+
+::selection {
+  background: hsla(0deg, 75%, 72%, 0.949);
+  color: #121212;
+}

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
-  <link rel="shortcut icon" href="./assets/images/favicon.jpg" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
 
 
 </head>
@@ -16,36 +16,36 @@
 <body>
 
   <nav id="navbar"
-    class="py-3 md:px-6 px-4 flex justify-between items-center opacity-0 transform -translate-y-10 transition-all duration-700">
+    class=" md:px-6 px-4 flex justify-between items-center opacity-0 transform -translate-y-10 transition-all duration-700">
     <!-- Logo and Title -->
     <span class="flex items-center gap-4 lg:text-3xl text-2xl font-bold text-white">
 
-      <a href="#home" class="scroll-link" data-target="home" data-url="/home">
+      <a href="#home" class="scroll-link home-scroll" data-target="home" data-url="/home">
 
-        <img src="./assets/images/logo.png" alt="logo" class="md:w-28 w-24" />
+        <img src="./assets/images/logo.png" alt="logo" class="md:w-36 w-28" />
       </a>
     </span>
 
     <!-- Desktop Navigation -->
     <ul class="md:flex hidden items-center gap-8 lg:text-[1.2rem] text-[0.9rem] text-white">
       <li>
-        <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline" data-target="home"
+        <a href="#" class="scroll-link home-scroll hover:text-[#dadada] duration-300 hover:underline" data-target="home"
           data-url="/home">Home</a>
       </li>
       <li>
-        <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline" data-target="Our-Commitment"
+        <a href="#" class="scroll-link home-scroll hover:text-[#dadada] duration-300 hover:underline" data-target="Our-Commitment"
           data-url="/our-commitment">Commitment</a>
       </li>
       <li>
-        <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline" data-target="Our-Specialities"
+        <a href="#" class="scroll-link home-scroll hover:text-[#dadada] duration-300 hover:underline" data-target="Our-Specialities"
           data-url="/our-specialities">Specialities</a>
       </li>
       <li>
-        <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline" data-target="Our-Values"
+        <a href="#" class="scroll-link home-scroll hover:text-[#dadada] duration-300 hover:underline" data-target="Our-Values"
           data-url="/our-values">Values</a>
       </li>
       <li>
-        <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline" data-target="contact-us"
+        <a href="#" class="scroll-link home-scroll hover:text-[#dadada] duration-300 hover:underline" data-target="contact-us"
           data-url="/contact-us">Contact</a>
       </li>
     </ul>
@@ -60,7 +60,7 @@
   <div id="mobileMenu"
     class="fixed z-50 bg-black top-0 left-0 w-full h-screen flex-col items-center opacity-0 scale-95 hidden transition-all duration-500 ease-in-out">
     <!-- Header -->
-    <div class="w-full flex justify-between items-center px-3 py-3 border-b">
+    <div class="w-full flex justify-between items-center py-3 border-b">
       <span class="flex items-center gap-4 text-2xl font-bold text-white">
         <img src="./assets/images/logo.png" alt="logo" class="w-24" />
       </span>
@@ -73,23 +73,23 @@
     <!-- Mobile Links -->
     <ul class="flex flex-col items-center gap-6 mt-8 text-white font-semibold text-[1.2rem]" id="mobile-ul">
       <li>
-        <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline" data-target="home"
+        <a href="#" class="scroll-link home-scroll hover:text-[#dadada] duration-300 hover:underline" data-target="home"
           data-url="/home">Home</a>
       </li>
       <li>
-        <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline" data-target="Our-Commitment"
+        <a href="#" class="scroll-link home-scroll hover:text-[#dadada] duration-300 hover:underline" data-target="Our-Commitment"
           data-url="/our-commitment">Commitment</a>
       </li>
       <li>
-        <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline" data-target="Our-Specialities"
+        <a href="#" class="scroll-link home-scroll hover:text-[#dadada] duration-300 hover:underline" data-target="Our-Specialities"
           data-url="/our-specialities">Specialities</a>
       </li>
       <li>
-        <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline" data-target="Our-Values"
+        <a href="#" class="scroll-link home-scroll hover:text-[#dadada] duration-300 hover:underline" data-target="Our-Values"
           data-url="/our-values">Values</a>
       </li>
       <li>
-        <a href="#" class="scroll-link hover:text-[#dadada] duration-300 hover:underline" data-target="contact-us"
+        <a href="#" class="scroll-link home-scroll hover:text-[#dadada] duration-300 hover:underline" data-target="contact-us"
           data-url="/contact">Contact</a>
       </li>
     </ul>
@@ -101,7 +101,7 @@
 
 
     <section id="home"
-      class="flex flex-col py-16 md:mt-32 mt-12 md:flex-row items-center justify-between md:px-6 px-4  gap-10">
+      class="flex flex-col py-16 md:mt-32 mt-12 md:flex-row items-center justify-between px-6  gap-10">
       <!-- Left Content -->
       <div class="md:w-1/2 space-y-6 text-white">
         <h1
@@ -442,7 +442,7 @@
 
   <footer class="mx-auto text-center text-white mb-5 mt-[-2rem]">
     <p>Copyright © 2025 Shinobi Force Ltd.</p>
-    <a href="#home" class="scroll-link" data-target="home" data-url="/home">
+    <a href="#home" class="scroll-link home-scroll" data-target="home" data-url="/home">
       <img src="./assets/images/logo.png" alt="logo" class="w-32 mx-auto mt-2" />
     </a>
   </footer>
@@ -581,7 +581,6 @@
       }, 3000);
     }
 
-    //js to disable right click
 
 
     // Get the navbar element
@@ -645,7 +644,40 @@
 
 
 
-    document.addEventListener("contextmenu", function (e) {
+//js to reach their sections on scroll
+
+  document.querySelectorAll('.home-scroll').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('data-target');
+      const targetElement = document.getElementById(targetId);
+      if (!targetElement) return;
+
+      // Calculate current scroll position
+      const currentScroll = window.scrollY;
+      const targetPosition = targetElement.getBoundingClientRect().top + currentScroll;
+
+      // Detect scroll direction
+      const isScrollingDown = targetPosition > currentScroll;
+
+      // Offset values: tweak these for perfect spacing
+      const offsetUp = 170;   // when scrolling from top (stop a bit before)
+      const offsetDown = 100; // when scrolling from bottom (scroll more into section)
+
+      // Final position based on direction
+      const finalScrollPosition = targetPosition - (isScrollingDown ? offsetUp : offsetDown);
+
+      // Smooth scroll
+      window.scrollTo({
+        top: finalScrollPosition,
+        behavior: 'smooth'
+      });
+    });
+  });
+
+//js to disable right click
+ document.addEventListener("contextmenu", function (e) {
       e.preventDefault();
     });
 
@@ -658,8 +690,6 @@
         e.preventDefault();
       }
     });
-
-    //js to disable right click
 
 
 

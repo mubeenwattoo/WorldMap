@@ -110,6 +110,6 @@ body {
   right: 0;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 40;
-  margin: 0 auto;
-  width: 98%;
+  width: 100%;
+  transform: translateY(-7px);
 }
